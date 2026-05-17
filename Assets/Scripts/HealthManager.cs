@@ -31,7 +31,7 @@ public class HealthManager : MonoBehaviour
         UpdateUI();
 
         // Tìm GameManager trong scene
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindFirstObjectByType<GameManager>();
 
         isDead = false;
     }
@@ -40,16 +40,16 @@ public class HealthManager : MonoBehaviour
         // ✅ ĐỂ CODE TEST Ở ĐÂY - trong hàm Update()
 
         // TEST: Nhấn H để mất 100 máu (xóa sau khi test)
-        /*if (Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKeyDown(KeyCode.H))
         {
-            TakeDamage(100f);
+            TakeDamage(500f);
         }
 
         // TEST: Nhấn R để hồi 100 máu
         if (Input.GetKeyDown(KeyCode.R))
         {
             Heal(100f);
-        }*/
+        }
     }
     public void Heal(float amount)
     {
