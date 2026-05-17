@@ -38,6 +38,12 @@ public class PlayerControl : MonoBehaviour
         // Animation
         anim.SetFloat("Speed", Mathf.Abs(moveInput));
         anim.SetBool("IsGrounded", isGrounded);
+        // Kiểm tra game có đang pause không
+        if (Time.timeScale == 0f)
+        {
+            // Không cho di chuyển khi pause
+            return;
+        }
     }
 
     void FixedUpdate()
