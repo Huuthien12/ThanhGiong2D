@@ -18,9 +18,18 @@ public class VatPhamCom : MonoBehaviour
                 healthManager.Heal(luongHoi);
 
                 ShowFloatingText(collision.transform.position, luongHoi);
-
-                // ⭐ Phát âm thanh qua AudioManager
                 PlayEatSound();
+
+                // ⭐⭐⭐ THÊM DÒNG NÀY - Báo cho GameManager đã ăn com ⭐⭐⭐
+                GameManager gameManager = FindFirstObjectByType<GameManager>();
+                if (gameManager != null)
+                {
+                    gameManager.ThuThapCom();
+                }
+                else
+                {
+                    Debug.LogWarning("Không tìm thấy GameManager trong scene!");
+                }
 
                 Destroy(gameObject);
             }
@@ -44,7 +53,6 @@ public class VatPhamCom : MonoBehaviour
         }
     }
 
-    // ⭐ Hàm gọi âm thanh từ AudioManager
     void PlayEatSound()
     {
         if (AudioManager.Instance != null)

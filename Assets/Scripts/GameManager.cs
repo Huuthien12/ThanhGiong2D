@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,39 +9,104 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel;
 
     [Header("Player")]
-    public HealthManager playerHealth;  // Đổi từ PlayerHealth sang HealthManager
+    public HealthManager playerHealth;
+
+    // =====================================================
+    // MAP 1 - ĂN COM
+    // =====================================================
+
+    [Header("MAP 1 - Thu thập Com")]
+    public bool suDungNhiemVuCom = true;
+
+    public int soComCanThu = 10;
+    private int soComDaThu = 0;
+
+    // =====================================================
+    // MAP 2 / MAP 3 - DIỆT QUÁI
+    // =====================================================
+
+    [Header("MAP 2/3 - Tiêu diệt quái")]
+    public bool suDungNhiemVuDietQuai = false;
+
+    public int soQuaiCanDiet = 5;
+    private int soQuaiDaDiet = 0;
+
+    // =====================================================
+    // CỬA / SQUARE
+    // =====================================================
+
+    [Header("Square chặn đường")]
+    public List<GameObject> blockingSquares;
+    public List<Collider2D> squareColliders;
+
+    private bool daMoKhoa = false;
+
+    [Header("UI")]
+    public Text textNhiemVu;
+    public GameObject thongBaoMoKhoa;
+
+    [Header("Hiệu ứng")]
+    public Color mauSquareKhiKhoa = new Color(0.8f, 0.2f, 0.2f, 1f);
+    public Color mauSquareKhiMo = new Color(0.2f, 0.8f, 0.2f, 0.5f);
+
+    private List<SpriteRenderer> squareSpriteRenderers = new List<SpriteRenderer>();
 
     void Start()
     {
-        // Ẩn GameOverPanel khi bắt đầu game
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
 
-        // Tìm HealthManager nếu chưa gán
         if (playerHealth == null)
         {
             playerHealth = FindFirstObjectByType<HealthManager>();
-
-            if (playerHealth == null)
-            {
-                Debug.LogError("KHÔNG TÌM THẤY HealthManager! Hãy tạo GameObject và gắn script HealthManager vào.");
-            }
-            else
-            {
-                Debug.Log("Đã tìm thấy HealthManager: " + playerHealth.gameObject.name);
-            }
         }
 
+        KhoiTaoTatCaSquare();
+
+        if (thongBaoMoKhoa != null)
+            thongBaoMoKhoa.SetActive(false);
+
+        CapNhatUI();
     }
+
+    // =====================================================
+    // KHỞI TẠO SQUARE
+    // =====================================================
+
+    void KhoiTaoTatCaSquare()
+    {
+        for (int i = 0; i < blockingSquares.Count; i++)
+        {
+            if (blockingSquares[i] == null) continue;
+
+            Collider2D col = blockingSquares[i].GetComponent<Collider2D>();
+
+            if (col != null)
+            {
+                col.isTrigger = false;
+            }
+
+            squareColliders.Add(col);
+
+            SpriteRenderer sr = blockingSquares[i].GetComponent<SpriteRenderer>();
+
+            squareSpriteRenderers.Add(sr);
+
+            if (sr != null)
+            {
+                sr.color = mauSquareKhiKhoa;
+            }
+        }
+    }
+
+    // =====================================================
+    // UPDATE
+    // =====================================================
 
     void Update()
     {
-        // Không cần cập nhật UI máu ở đây nữa (HealthManager tự lo)
-
-        // Kiểm tra player chết thông qua HealthManager
         if (playerHealth != null && !playerHealth.IsAlive())
         {
-            // Tránh gọi GameOver nhiều lần
             if (!gameOverPanel.activeSelf)
             {
                 GameOver();
@@ -48,29 +114,136 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // =====================================================
+    // MAP 1 - ĂN COM
+    // =====================================================
+
+    public void ThuThapCom()
+    {
+        if (!suDungNhiemVuCom) return;
+
+        if (daMoKhoa) return;
+
+        soComDaThu++;
+
+        Debug.Log("🍙 Đã ăn com: " + soComDaThu);
+
+        CapNhatUI();
+
+        if (soComDaThu >= soComCanThu)
+        {
+            MoKhoaTatCaSquare();
+        }
+    }
+
+    // =====================================================
+    // MAP 2/3 - DIỆT QUÁI
+    // =====================================================
+
+    public void QuaiBiTieuDiet()
+    {
+        if (!suDungNhiemVuDietQuai) return;
+
+        if (daMoKhoa) return;
+
+        soQuaiDaDiet++;
+
+        Debug.Log("💀 Đã diệt quái: " + soQuaiDaDiet);
+
+        CapNhatUI();
+
+        if (soQuaiDaDiet >= soQuaiCanDiet)
+        {
+            MoKhoaTatCaSquare();
+        }
+    }
+
+    // =====================================================
+    // MỞ KHÓA
+    // =====================================================
+
+    private void MoKhoaTatCaSquare()
+    {
+        daMoKhoa = true;
+
+        for (int i = 0; i < blockingSquares.Count; i++)
+        {
+            if (blockingSquares[i] != null)
+            {
+                SquareBlocker blocker =
+                    blockingSquares[i].GetComponent<SquareBlocker>();
+
+                if (blocker != null)
+                {
+                    blocker.MoKhoa();
+                }
+            }
+        }
+
+        if (thongBaoMoKhoa != null)
+        {
+            thongBaoMoKhoa.SetActive(true);
+            Invoke("AnThongBao", 2f);
+        }
+
+        Debug.Log("🎉 ĐÃ MỞ KHÓA TẤT CẢ!");
+    }
+    void AnThongBao()
+    {
+        if (thongBaoMoKhoa != null)
+        {
+            thongBaoMoKhoa.SetActive(false);
+        }
+    }
+
+    // =====================================================
+    // UI
+    // =====================================================
+
+    void CapNhatUI()
+    {
+        if (textNhiemVu == null) return;
+
+        if (suDungNhiemVuCom)
+        {
+            textNhiemVu.text =
+                "🍙 Com: " + soComDaThu + " / " + soComCanThu;
+        }
+
+        if (suDungNhiemVuDietQuai)
+        {
+            textNhiemVu.text =
+                "💀 Quái: " + soQuaiDaDiet + " / " + soQuaiCanDiet;
+        }
+    }
+
+    // =====================================================
+    // GAME OVER
+    // =====================================================
+
     public void GameOver()
     {
         if (gameOverPanel.activeSelf) return;
 
-        Time.timeScale = 0f;  // Dừng game
+        Time.timeScale = 0f;
+
         gameOverPanel.SetActive(true);
 
-        // Hiện con trỏ chuột
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-
-        Debug.Log("Game Over Panel hiển thị!");
     }
 
     public void RetryGame()
     {
         Time.timeScale = 1f;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void BackToMainMenu()
     {
         Time.timeScale = 1f;
+
         SceneManager.LoadScene("MenuScene");
     }
 }

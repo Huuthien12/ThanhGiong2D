@@ -43,25 +43,21 @@ public class GiacAnAI : MonoBehaviour
 
         if (player == null) return;
 
-        FacePlayer(); // 👈 THÊM DÒNG NÀY
-
         float distance = Vector2.Distance(transform.position, player.position);
-
-        moveSpeed = 0;
-
-        anim.SetBool("isChasing", distance < detectRange);
 
         if (distance < detectRange)
         {
+            anim.SetBool("isChasing", true); // Bật trạng thái đuổi
+            FacePlayer();
             HandleChaseAndAttack(distance);
         }
         else
         {
+            anim.SetBool("isChasing", false); // Tắt trạng thái đuổi
             Patrol();
         }
 
-        lastPos = transform.position;
-
+        // Luôn cập nhật Speed để Animator biết đang di chuyển hay đứng yên
         anim.SetFloat("Speed", moveSpeed);
     }
 
