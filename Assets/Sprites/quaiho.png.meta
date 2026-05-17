@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 67b38666ea93fcb40ab05f55970ad86c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1293458310814320317
+    second: quaiho_0
+  - first:
+      213: 8114150869842565724
+    second: quaiho_1
+  - first:
+      213: 8632241397702975615
+    second: quaiho_2
+  - first:
+      213: -2587676140675767415
+    second: quaiho_3
+  - first:
+      213: 4247670810539431508
+    second: quaiho_4
+  - first:
+      213: -6015137387691480497
+    second: quaiho_5
+  - first:
+      213: 5217133387187149255
+    second: quaiho_6
+  - first:
+      213: -2384752577032773363
+    second: quaiho_7
+  - first:
+      213: -7493205544691436235
+    second: quaiho_8
+  - first:
+      213: 2082052880871275194
+    second: quaiho_9
+  - first:
+      213: 589580298603642369
+    second: quaiho_10
+  - first:
+      213: 8386002240033265198
+    second: quaiho_11
+  - first:
+      213: 3039627744058595513
+    second: quaiho_12
+  - first:
+      213: 5179951267879618608
+    second: quaiho_13
+  - first:
+      213: -4776197399455388543
+    second: quaiho_14
+  - first:
+      213: 2992796789663917466
+    second: quaiho_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: quaiho_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 447
+        width: 222
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349b224f486bc0ee0800000000000000
+      internalID: -1293458310814320317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 447
+        width: 223
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a94eab9314b9070800000000000000
+      internalID: 8114150869842565724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_2
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 447
+        width: 218
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70e18dc0d1ebc770800000000000000
+      internalID: 8632241397702975615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_3
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 446
+        width: 222
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9836449924ab61cd0800000000000000
+      internalID: -2587676140675767415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_4
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 301
+        width: 229
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4569ff8d812c2fa30800000000000000
+      internalID: 4247670810539431508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 301
+        width: 238
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a6a7b5a60f58ca0800000000000000
+      internalID: -6015137387691480497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_6
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 300
+        width: 239
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9de119c2bf66840800000000000000
+      internalID: 5217133387187149255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_7
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 301
+        width: 234
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01a3c88a28a7eed0800000000000000
+      internalID: -2384752577032773363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_8
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 154
+        width: 226
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535fdaff149c20890800000000000000
+      internalID: -7493205544691436235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_9
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 166
+        width: 256
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba39ef5010f4ec10800000000000000
+      internalID: 2082052880871275194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_10
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 154
+        width: 228
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10eb6d8682c9e2800800000000000000
+      internalID: 589580298603642369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 154
+        width: 216
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2610da3b90116470800000000000000
+      internalID: 8386002240033265198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 7
+        width: 223
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8d80e145dee2a20800000000000000
+      internalID: 3039627744058595513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_13
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 7
+        width: 242
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0388ccbcb32e2e740800000000000000
+      internalID: 5179951267879618608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_14
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 7
+        width: 227
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c215445c987bdb0800000000000000
+      internalID: -4776197399455388543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaiho_15
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 26
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95e8dcd2dc888920800000000000000
+      internalID: 2992796789663917466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      quaiho_0: -1293458310814320317
+      quaiho_1: 8114150869842565724
+      quaiho_10: 589580298603642369
+      quaiho_11: 8386002240033265198
+      quaiho_12: 3039627744058595513
+      quaiho_13: 5179951267879618608
+      quaiho_14: -4776197399455388543
+      quaiho_15: 2992796789663917466
+      quaiho_2: 8632241397702975615
+      quaiho_3: -2587676140675767415
+      quaiho_4: 4247670810539431508
+      quaiho_5: -6015137387691480497
+      quaiho_6: 5217133387187149255
+      quaiho_7: -2384752577032773363
+      quaiho_8: -7493205544691436235
+      quaiho_9: 2082052880871275194
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

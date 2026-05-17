@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: c59eaf8f097f6a34b9d4889524f65832
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -603700709757019922
+    second: rantrum_0
+  - first:
+      213: -5020966871424839991
+    second: rantrum_1
+  - first:
+      213: -6579135667360525161
+    second: rantrum_2
+  - first:
+      213: -589338839036826157
+    second: rantrum_3
+  - first:
+      213: -5682961908047014361
+    second: rantrum_4
+  - first:
+      213: -1453991427519795732
+    second: rantrum_5
+  - first:
+      213: 299730899033652045
+    second: rantrum_6
+  - first:
+      213: -2390146099873099749
+    second: rantrum_7
+  - first:
+      213: 710003025674385076
+    second: rantrum_8
+  - first:
+      213: 7647927767434466102
+    second: rantrum_9
+  - first:
+      213: -6940026851582822451
+    second: rantrum_10
+  - first:
+      213: -1394303552264597700
+    second: rantrum_11
+  - first:
+      213: -6966682142896028924
+    second: rantrum_12
+  - first:
+      213: -8453730588039112262
+    second: rantrum_13
+  - first:
+      213: 3385664331048688260
+    second: rantrum_14
+  - first:
+      213: -5456455546728116689
+    second: rantrum_15
+  - first:
+      213: 58282218630472924
+    second: rantrum_16
+  - first:
+      213: 6223051071583637000
+    second: rantrum_17
+  - first:
+      213: 1500360501258625821
+    second: rantrum_18
+  - first:
+      213: 1185858885695020264
+    second: rantrum_19
+  - first:
+      213: -1955814804150156208
+    second: rantrum_20
+  - first:
+      213: -1253718550160190613
+    second: rantrum_21
+  - first:
+      213: -2053830092729417568
+    second: rantrum_22
+  - first:
+      213: 8762048647230267052
+    second: rantrum_23
+  - first:
+      213: 2070180788186055558
+    second: rantrum_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rantrum_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 446
+        width: 161
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8184c27693f97f0800000000000000
+      internalID: -603700709757019922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 446
+        width: 159
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cec7bf8b31f15ab0800000000000000
+      internalID: -5020966871424839991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_2
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 446
+        width: 159
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7949fd1e7f632b4a0800000000000000
+      internalID: -6579135667360525161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_3
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 446
+        width: 160
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd6ed6c27f32d7f0800000000000000
+      internalID: -589338839036826157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 313
+        width: 244
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72618c611401221b0800000000000000
+      internalID: -5682961908047014361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 312
+        width: 269
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced2830108262dbe0800000000000000
+      internalID: -1453991427519795732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_6
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 312
+        width: 259
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bfb152aabd82400800000000000000
+      internalID: 299730899033652045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_7
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 312
+        width: 257
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1057c329ce74ded0800000000000000
+      internalID: -2390146099873099749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 160
+        width: 189
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b636c67dff6ad900800000000000000
+      internalID: 710003025674385076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_9
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 269
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63317c5b8c5e22a60800000000000000
+      internalID: 7647927767434466102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_10
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 267
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7bbbb295210bf90800000000000000
+      internalID: -6940026851582822451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_11
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 157
+        width: 163
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f043a7e4076ace0800000000000000
+      internalID: -1394303552264597700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_12
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 213
+        width: 90
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40300a9808f515f90800000000000000
+      internalID: -6966682142896028924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_13
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 160
+        width: 268
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab91319e1d05eaa80800000000000000
+      internalID: -8453730588039112262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_14
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 156
+        width: 275
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a1ed465cb4cfe20800000000000000
+      internalID: 3385664331048688260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 13
+        width: 229
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e8f8cf696c644b0800000000000000
+      internalID: -5456455546728116689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_16
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 13
+        width: 244
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4e03a7e5f0fc000800000000000000
+      internalID: 58282218630472924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_17
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 13
+        width: 195
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e4bdc7af7bc5650800000000000000
+      internalID: 6223051071583637000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_18
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 95
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d132c883de952d410800000000000000
+      internalID: 1500360501258625821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_19
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 80
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec9793af54057010800000000000000
+      internalID: 1185858885695020264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_20
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 86
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0540e284ccc8bd4e0800000000000000
+      internalID: -1955814804150156208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_21
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 70
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6352610f95e99ee0800000000000000
+      internalID: -1253718550160190613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_22
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 82
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a00bdd89645f73e0800000000000000
+      internalID: -2053830092729417568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_23
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 73
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae1ad242dc099970800000000000000
+      internalID: 8762048647230267052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rantrum_24
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 14
+        width: 256
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6830ba46572cabc10800000000000000
+      internalID: 2070180788186055558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rantrum_0: -603700709757019922
+      rantrum_1: -5020966871424839991
+      rantrum_10: -6940026851582822451
+      rantrum_11: -1394303552264597700
+      rantrum_12: -6966682142896028924
+      rantrum_13: -8453730588039112262
+      rantrum_14: 3385664331048688260
+      rantrum_15: -5456455546728116689
+      rantrum_16: 58282218630472924
+      rantrum_17: 6223051071583637000
+      rantrum_18: 1500360501258625821
+      rantrum_19: 1185858885695020264
+      rantrum_2: -6579135667360525161
+      rantrum_20: -1955814804150156208
+      rantrum_21: -1253718550160190613
+      rantrum_22: -2053830092729417568
+      rantrum_23: 8762048647230267052
+      rantrum_24: 2070180788186055558
+      rantrum_3: -589338839036826157
+      rantrum_4: -5682961908047014361
+      rantrum_5: -1453991427519795732
+      rantrum_6: 299730899033652045
+      rantrum_7: -2390146099873099749
+      rantrum_8: 710003025674385076
+      rantrum_9: 7647927767434466102
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

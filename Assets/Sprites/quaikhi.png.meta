@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 01b51e4fe68b5484e8a81299a5b49e24
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3698051837572720235
+    second: quaikhi_0
+  - first:
+      213: -5767490968267216699
+    second: quaikhi_1
+  - first:
+      213: -1036160613207586456
+    second: quaikhi_2
+  - first:
+      213: -2555399111376073269
+    second: quaikhi_3
+  - first:
+      213: -6356795076725276949
+    second: quaikhi_4
+  - first:
+      213: 8577428556007264865
+    second: quaikhi_5
+  - first:
+      213: 1243808850871441649
+    second: quaikhi_6
+  - first:
+      213: -6637591128616638387
+    second: quaikhi_7
+  - first:
+      213: 3737848337706979959
+    second: quaikhi_8
+  - first:
+      213: 4558504731435921734
+    second: quaikhi_9
+  - first:
+      213: -7004264371015018168
+    second: quaikhi_10
+  - first:
+      213: -1055979970408177898
+    second: quaikhi_11
+  - first:
+      213: -1302407046559599093
+    second: quaikhi_12
+  - first:
+      213: 3096573222788480098
+    second: quaikhi_13
+  - first:
+      213: -3356217024696805191
+    second: quaikhi_14
+  - first:
+      213: 7027448320331185691
+    second: quaikhi_15
+  - first:
+      213: -8859596458009214225
+    second: quaikhi_16
+  - first:
+      213: -7534154508391352915
+    second: quaikhi_17
+  - first:
+      213: -1255204061553700422
+    second: quaikhi_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: quaikhi_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 450
+        width: 70
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5995f746271edacc0800000000000000
+      internalID: -3698051837572720235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 403
+        width: 123
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c8a8279581c5ffa0800000000000000
+      internalID: -5767490968267216699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_2
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 403
+        width: 123
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869c28f7961de91f0800000000000000
+      internalID: -1036160613207586456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_3
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 403
+        width: 121
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd841b1c06698cd0800000000000000
+      internalID: -2555399111376073269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_4
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 403
+        width: 123
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee76d5be8028c7a0800000000000000
+      internalID: -6356795076725276949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 398
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162da1793d5290770800000000000000
+      internalID: 8577428556007264865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 274
+        width: 126
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8dda45f85e24110800000000000000
+      internalID: 1243808850871441649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 274
+        width: 127
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d486586390a82e3a0800000000000000
+      internalID: -6637591128616638387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_8
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 274
+        width: 132
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7721f4952418fd330800000000000000
+      internalID: 3737848337706979959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_9
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 274
+        width: 132
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641fc28b6ef034f30800000000000000
+      internalID: 4558504731435921734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 139
+        width: 114
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84999bc2aaadbce90800000000000000
+      internalID: -7004264371015018168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_11
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 139
+        width: 141
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f94edcfc76851f0800000000000000
+      internalID: -1055979970408177898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_12
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 139
+        width: 151
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0679dc01bbecede0800000000000000
+      internalID: -1302407046559599093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_13
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 139
+        width: 119
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c3b4590fc39fa20800000000000000
+      internalID: 3096573222788480098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_14
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 8
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b814d5e5625c61d0800000000000000
+      internalID: -3356217024696805191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_15
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 8
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e71caa303868160800000000000000
+      internalID: 7027448320331185691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_16
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 12
+        width: 120
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe24d0b26f36c0580800000000000000
+      internalID: -8859596458009214225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_17
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 99
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5fc6c646e417790800000000000000
+      internalID: -7534154508391352915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quaikhi_18
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 59
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1d67e6e8e949ee0800000000000000
+      internalID: -1255204061553700422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      quaikhi_0: -3698051837572720235
+      quaikhi_1: -5767490968267216699
+      quaikhi_10: -7004264371015018168
+      quaikhi_11: -1055979970408177898
+      quaikhi_12: -1302407046559599093
+      quaikhi_13: 3096573222788480098
+      quaikhi_14: -3356217024696805191
+      quaikhi_15: 7027448320331185691
+      quaikhi_16: -8859596458009214225
+      quaikhi_17: -7534154508391352915
+      quaikhi_18: -1255204061553700422
+      quaikhi_2: -1036160613207586456
+      quaikhi_3: -2555399111376073269
+      quaikhi_4: -6356795076725276949
+      quaikhi_5: 8577428556007264865
+      quaikhi_6: 1243808850871441649
+      quaikhi_7: -6637591128616638387
+      quaikhi_8: 3737848337706979959
+      quaikhi_9: 4558504731435921734
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
