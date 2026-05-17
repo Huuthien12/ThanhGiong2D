@@ -18,7 +18,19 @@ public class GameManager : MonoBehaviour
 
         // Tìm HealthManager nếu chưa gán
         if (playerHealth == null)
-            playerHealth = FindObjectOfType<HealthManager>();
+        {
+            playerHealth = FindFirstObjectByType<HealthManager>();
+
+            if (playerHealth == null)
+            {
+                Debug.LogError("KHÔNG TÌM THẤY HealthManager! Hãy tạo GameObject và gắn script HealthManager vào.");
+            }
+            else
+            {
+                Debug.Log("Đã tìm thấy HealthManager: " + playerHealth.gameObject.name);
+            }
+        }
+
     }
 
     void Update()

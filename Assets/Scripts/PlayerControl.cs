@@ -12,6 +12,7 @@ public class PlayerControl : MonoBehaviour
     private bool isGrounded;
     private float moveInput;
     private bool facingRight = true;
+    private bool isClimbing = false;
 
     void Start()
     {
@@ -21,34 +22,52 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        moveInput = Input.GetAxisRaw("Horizontal");
-
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-
-        // Jump
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        // Kiểm tra game có đang pause không
+        if (Time.timeScale == 0f)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            return;
         }
 
-        // Flip
+        moveInput = Input.GetAxisRaw("Horizontal");
+
+        // CHỈ kiểm tra ground và nhảy khi KHÔNG leo
+        if (!isClimbing)
+        {
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+            // Jump
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            }
+        }
+
+        // Flip (vẫn cho phép flip khi leo nếu muốn)
         if (moveInput > 0 && !facingRight) Flip();
         else if (moveInput < 0 && facingRight) Flip();
 
         // Animation
         anim.SetFloat("Speed", Mathf.Abs(moveInput));
         anim.SetBool("IsGrounded", isGrounded);
-        // Kiểm tra game có đang pause không
-        if (Time.timeScale == 0f)
-        {
-            // Không cho di chuyển khi pause
-            return;
-        }
+    }
+
+    public void SetClimbing(bool climbing)
+    {
+        isClimbing = climbing;
     }
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        // CHỈ di chuyển ngang khi KHÔNG leo
+        if (!isClimbing)
+        {
+            rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        }
+        else
+        {
+            // Khi đang leo, giữ nguyên vận tốc ngang (không di chuyển)
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
     }
 
     void Flip()
