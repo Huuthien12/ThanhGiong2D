@@ -164,29 +164,67 @@ public class GameManager : MonoBehaviour
 
     private void MoKhoaTatCaSquare()
     {
+        Debug.Log("=== BẮT ĐẦU MỞ KHÓA SQUARE ===");
+        Debug.Log($"daMoKhoa trước khi mở: {daMoKhoa}");
+
         daMoKhoa = true;
+
+        Debug.Log($"Số lượng blockingSquares trong danh sách: {blockingSquares.Count}");
 
         for (int i = 0; i < blockingSquares.Count; i++)
         {
-            if (blockingSquares[i] != null)
-            {
-                SquareBlocker blocker =
-                    blockingSquares[i].GetComponent<SquareBlocker>();
+            GameObject square = blockingSquares[i];
 
-                if (blocker != null)
+            if (square == null)
+            {
+                Debug.LogError($"Square {i} là NULL! Hãy kiểm tra lại trong Inspector");
+                continue;
+            }
+
+            Debug.Log($"\n--- Đang xử lý Square {i}: {square.name} ---");
+            Debug.Log($"Square có đang active không? {square.activeSelf}");
+            Debug.Log($"Vị trí Square: {square.transform.position}");
+
+            // Kiểm tra SquareBlocker
+            SquareBlocker blocker = square.GetComponent<SquareBlocker>();
+            if (blocker != null)
+            {
+                Debug.Log($"Tìm thấy SquareBlocker trên {square.name}");
+                blocker.MoKhoa();
+            }
+            else
+            {
+                Debug.LogWarning($"KHÔNG tìm thấy SquareBlocker trên {square.name}, tự xử lý...");
+
+                // Cách 1: TẮT HẲN GAMEOBJECT - chắc chắn nhất
+                square.SetActive(false);
+                Debug.Log($"Đã tắt GameObject {square.name}");
+
+                // Cách 2: Tắt Collider
+                Collider2D col = square.GetComponent<Collider2D>();
+                if (col != null)
                 {
-                    blocker.MoKhoa();
+                    col.enabled = false;
+                    Debug.Log($"Đã tắt Collider của {square.name}");
+                }
+
+                // Đổi màu
+                SpriteRenderer sr = square.GetComponent<SpriteRenderer>();
+                if (sr != null)
+                {
+                    sr.color = mauSquareKhiMo;
                 }
             }
         }
 
+        // Hiện thông báo
         if (thongBaoMoKhoa != null)
         {
             thongBaoMoKhoa.SetActive(true);
-            Invoke("AnThongBao", 2f);
+            Invoke("AnThongBao", 10f);
         }
 
-        Debug.Log("🎉 ĐÃ MỞ KHÓA TẤT CẢ!");
+        Debug.Log("=== KẾT THÚC MỞ KHÓA ===");
     }
     void AnThongBao()
     {
@@ -231,6 +269,13 @@ public class GameManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+    public void PlayerDied()
+    {
+        if (!gameOverPanel.activeSelf)
+        {
+            GameOver();
+        }
     }
 
     public void RetryGame()

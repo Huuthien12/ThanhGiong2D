@@ -44,8 +44,8 @@ public class TeleportByLocation : MonoBehaviour
         if (interactUI != null)
         {
             interactText = interactUI.GetComponentInChildren<TextMeshProUGUI>();
-            if (interactText != null)
-                interactText.text = $"Nhấn {interactKey} để đến {locationName}";
+            //if (interactText != null)
+                //interactText.text = $"Nhấn {interactKey} để đến {locationName}";
         }
 
         if (loadingPanel != null)
@@ -71,8 +71,8 @@ public class TeleportByLocation : MonoBehaviour
             if (interactUI != null)
             {
                 interactUI.SetActive(true);
-                if (interactText != null)
-                    interactText.text = $"Nhấn {interactKey} để đến {locationName}";
+                //if (interactText != null)
+                    //interactText.text = $"Nhấn {interactKey} để đến {locationName}";
             }
             Debug.Log($"🟢 Đến gần {locationName}, nhấn {interactKey} để teleport");
         }
