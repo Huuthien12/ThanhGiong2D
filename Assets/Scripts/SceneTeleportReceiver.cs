@@ -3,57 +3,54 @@
 public class SceneTeleportReceiver : MonoBehaviour
 {
     [Header("=== TELEPORT POINTS ===")]
-    public Transform startPoint;      // Điểm spawn mặc định
-    public Transform fromMap1Point;   // Điểm đến từ Map1
-    public Transform fromMap2Point;   // Điểm đến từ Map2
-    public Transform fromMap3Point;   // Điểm đến từ Map3
+    public Transform startPoint;      // Điểm spawn mặc định nếu chơi trực tiếp từ map này
+    public Transform fromMap1Point;   // Điểm đón khi đi từ Map1 sang
+    public Transform fromMap2Point;   // Điểm đón khi đi từ Map2 sang
+    public Transform fromMap3Point;   // Điểm đón khi đi từ Map3 sang
 
-    private GameObject player;
-
-    void Start()
+    // Hàm này sẽ được GameManager chủ động gọi ngay khi map mới tải xong xuôi
+    public void XulyDichChuyenPlayer(GameObject player)
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null) return;
 
-        // Kiểm tra xem có teleport từ scene khác không
+        Transform targetPoint = null;
+
+        // Kiểm tra xem có dữ liệu cổng dịch chuyển được lưu từ map trước không
         if (PlayerPrefs.HasKey("TargetTeleportID"))
         {
             string targetID = PlayerPrefs.GetString("TargetTeleportID");
-            TeleportToPoint(targetID);
 
-            // Xóa key sau khi dùng
+            switch (targetID)
+            {
+                case "FromMap1":
+                    targetPoint = fromMap1Point;
+                    break;
+                case "FromMap2":
+                    targetPoint = fromMap2Point;
+                    break;
+                case "FromMap3":
+                    targetPoint = fromMap3Point;
+                    break;
+                default:
+                    targetPoint = startPoint;
+                    break;
+            }
+
+            // Xóa key ngay sau khi dùng xong để tránh map sau bị nhảy nhầm vị trí
             PlayerPrefs.DeleteKey("TargetTeleportID");
         }
-        else if (startPoint != null && player != null)
-        {
-            // Spawn ở điểm mặc định
-            player.transform.position = startPoint.position;
-        }
-    }
 
-    void TeleportToPoint(string pointID)
-    {
-        Transform targetPoint = null;
-
-        switch (pointID)
+        // Nếu không tìm thấy ID cổng phù hợp, mặc định lấy điểm Start Point
+        if (targetPoint == null)
         {
-            case "FromMap1":
-                targetPoint = fromMap1Point;
-                break;
-            case "FromMap2":
-                targetPoint = fromMap2Point;
-                break;
-            case "FromMap3":
-                targetPoint = fromMap3Point;
-                break;
-            default:
-                targetPoint = startPoint;
-                break;
+            targetPoint = startPoint;
         }
 
-        if (targetPoint != null && player != null)
+        // Thực hiện dịch chuyển ông Player gốc sang vị trí mới
+        if (targetPoint != null)
         {
             player.transform.position = targetPoint.position;
-            Debug.Log($"✅ Teleport đến {targetPoint.name} tại {targetPoint.position}");
+            Debug.Log($"✅ [Receiver] Đã dịch chuyển Player thành công đến điểm: {targetPoint.name}");
         }
     }
 }
