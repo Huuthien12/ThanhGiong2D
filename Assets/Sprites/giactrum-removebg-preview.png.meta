@@ -1,0 +1,579 @@
+fileFormatVersion: 2
+guid: d2740736310f11941801f5ee0ace6dd0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6468346359839127044
+    second: giactrum-removebg-preview_0
+  - first:
+      213: 4711048544780716371
+    second: giactrum-removebg-preview_1
+  - first:
+      213: 5697994626922344079
+    second: giactrum-removebg-preview_2
+  - first:
+      213: 4092186454108791749
+    second: giactrum-removebg-preview_3
+  - first:
+      213: -6727448374660383124
+    second: giactrum-removebg-preview_4
+  - first:
+      213: -4244058810299721024
+    second: giactrum-removebg-preview_5
+  - first:
+      213: -7679404370954704151
+    second: giactrum-removebg-preview_6
+  - first:
+      213: -8337842793466181776
+    second: giactrum-removebg-preview_7
+  - first:
+      213: -8359935663863744006
+    second: giactrum-removebg-preview_8
+  - first:
+      213: 5665026215820150264
+    second: giactrum-removebg-preview_9
+  - first:
+      213: -3611949270099776943
+    second: giactrum-removebg-preview_10
+  - first:
+      213: 5173354014968548821
+    second: giactrum-removebg-preview_11
+  - first:
+      213: -1460779398677929246
+    second: giactrum-removebg-preview_12
+  - first:
+      213: -2886559073678911732
+    second: giactrum-removebg-preview_13
+  - first:
+      213: -6434885097979568364
+    second: giactrum-removebg-preview_14
+  - first:
+      213: 9087566708146790748
+    second: giactrum-removebg-preview_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 270
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406f6665ebe24c950800000000000000
+      internalID: 6468346359839127044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 270
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3598647f0b1016140800000000000000
+      internalID: 4711048544780716371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 270
+        width: 90
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e6ac58ce7531f40800000000000000
+      internalID: 5697994626922344079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 271
+        width: 88
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3e1df06ed5ac830800000000000000
+      internalID: 4092186454108791749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 179
+        width: 113
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6eb697c85d43a2a0800000000000000
+      internalID: -6727448374660383124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 81
+        width: 164
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cad73e7ff21a15c0800000000000000
+      internalID: -4244058810299721024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 176
+        width: 112
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eaa9ae69664d6590800000000000000
+      internalID: -7679404370954704151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 81
+        width: 171
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077c566b7280a4c80800000000000000
+      internalID: -8337842793466181776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 176
+        width: 113
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9384a7eca8bfb80800000000000000
+      internalID: -8359935663863744006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 176
+        width: 116
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f54c3524573e9e40800000000000000
+      internalID: 5665026215820150264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 82
+        width: 90
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15aa8f89647cfddc0800000000000000
+      internalID: -3611949270099776943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 167
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd8a8721127bc740800000000000000
+      internalID: 5173354014968548821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 66
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2e79e50e44abbe0800000000000000
+      internalID: -1460779398677929246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 64
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07103ee0d1e0f7d0800000000000000
+      internalID: -2886559073678911732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 0
+        width: 126
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f197cc812b2b6a0800000000000000
+      internalID: -6434885097979568364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 146
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5161c7e5c58d1e70800000000000000
+      internalID: 9087566708146790748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 80
+        width: 117
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b943d4bf46f0ee49bd8626a31f92d8b
+      internalID: -1568276719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giactrum-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 160
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7466da3bae612864e9ec91462a581f2b
+      internalID: 461217509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c223b65543b098c40866fd1c21ba04f4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      giactrum-removebg-preview_0: 6468346359839127044
+      giactrum-removebg-preview_1: 4711048544780716371
+      giactrum-removebg-preview_10: -3611949270099776943
+      giactrum-removebg-preview_11: 5173354014968548821
+      giactrum-removebg-preview_12: -1460779398677929246
+      giactrum-removebg-preview_13: -2886559073678911732
+      giactrum-removebg-preview_14: -6434885097979568364
+      giactrum-removebg-preview_15: 9087566708146790748
+      giactrum-removebg-preview_16: -1568276719
+      giactrum-removebg-preview_17: 461217509
+      giactrum-removebg-preview_2: 5697994626922344079
+      giactrum-removebg-preview_3: 4092186454108791749
+      giactrum-removebg-preview_4: -6727448374660383124
+      giactrum-removebg-preview_5: -4244058810299721024
+      giactrum-removebg-preview_6: -7679404370954704151
+      giactrum-removebg-preview_7: -8337842793466181776
+      giactrum-removebg-preview_8: -8359935663863744006
+      giactrum-removebg-preview_9: 5665026215820150264
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

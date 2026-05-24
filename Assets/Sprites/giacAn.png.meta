@@ -1,0 +1,530 @@
+fileFormatVersion: 2
+guid: 2775f0d50e1958544859e5c59ea0941e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7437877082363172077
+    second: giacAn_0
+  - first:
+      213: -4097642755298050388
+    second: giacAn_1
+  - first:
+      213: -8213604055279402062
+    second: giacAn_2
+  - first:
+      213: -4147048655676635615
+    second: giacAn_3
+  - first:
+      213: 403575736944373403
+    second: giacAn_4
+  - first:
+      213: -2990698981761783794
+    second: giacAn_5
+  - first:
+      213: -7270214440371879623
+    second: giacAn_6
+  - first:
+      213: -6885553264413878621
+    second: giacAn_7
+  - first:
+      213: 5069330328233213463
+    second: giacAn_8
+  - first:
+      213: 1509083970495346200
+    second: giacAn_9
+  - first:
+      213: -5163580019699296970
+    second: giacAn_10
+  - first:
+      213: 7793161179920521254
+    second: giacAn_11
+  - first:
+      213: -3132151855057646440
+    second: giacAn_12
+  - first:
+      213: -7429115934167598531
+    second: giacAn_13
+  - first:
+      213: -7863697009776802614
+    second: giacAn_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: giacAn_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 268
+        width: 65
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de496418cc5a83760800000000000000
+      internalID: 7437877082363172077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 268
+        width: 65
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caeb102df9f3227c0800000000000000
+      internalID: -4097642755298050388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_2
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 268
+        width: 65
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b30d5711aa630e80800000000000000
+      internalID: -8213604055279402062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 269
+        width: 66
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126022c3839b276c0800000000000000
+      internalID: -4147048655676635615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 173
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e29889ef9c99500800000000000000
+      internalID: 403575736944373403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 173
+        width: 83
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0867f91f17ee76d0800000000000000
+      internalID: -2990698981761783794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 173
+        width: 83
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93108b85c720b1b90800000000000000
+      internalID: -7270214440371879623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_7
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 79
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6549889c99170a0800000000000000
+      internalID: -6885553264413878621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_8
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 172
+        width: 81
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71e74773311e95640800000000000000
+      internalID: 5069330328233213463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 78
+        width: 85
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8167c9d20e751f410800000000000000
+      internalID: 1509083970495346200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 78
+        width: 174
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635d48474574758b0800000000000000
+      internalID: -5163580019699296970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 110
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628d68e9dced62c60800000000000000
+      internalID: 7793161179920521254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_12
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 118
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c45b09b7c5884d0800000000000000
+      internalID: -3132151855057646440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_13
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 88
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3afeb44b6a76e890800000000000000
+      internalID: -7429115934167598531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_14
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 0
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4c3f6bb398ed290800000000000000
+      internalID: -7863697009776802614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giacAn_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 77
+        width: 172
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e3bcd9e04036b49b7082a5ef97b9e8
+      internalID: 1612848431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1c18fcc9eb5146b4e90f67cb8ea57bbf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      giacAn_0: 7437877082363172077
+      giacAn_1: -4097642755298050388
+      giacAn_10: -5163580019699296970
+      giacAn_11: 7793161179920521254
+      giacAn_12: -3132151855057646440
+      giacAn_13: -7429115934167598531
+      giacAn_14: -7863697009776802614
+      giacAn_15: 1612848431
+      giacAn_2: -8213604055279402062
+      giacAn_3: -4147048655676635615
+      giacAn_4: 403575736944373403
+      giacAn_5: -2990698981761783794
+      giacAn_6: -7270214440371879623
+      giacAn_7: -6885553264413878621
+      giacAn_8: 5069330328233213463
+      giacAn_9: 1509083970495346200
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
