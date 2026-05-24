@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: a171a93ecee54bb43aec62101a81fc3f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3415244726203509022
+    second: macgiap_idle_run_0
+  - first:
+      213: -2065117853463313481
+    second: macgiap_idle_run_1
+  - first:
+      213: 1763700538173364180
+    second: macgiap_idle_run_2
+  - first:
+      213: 3599515646137857092
+    second: macgiap_idle_run_3
+  - first:
+      213: -110473013941737563
+    second: macgiap_idle_run_4
+  - first:
+      213: -4977422682688118587
+    second: macgiap_idle_run_5
+  - first:
+      213: 4674628965694268195
+    second: macgiap_idle_run_6
+  - first:
+      213: 1839107747438500276
+    second: macgiap_idle_run_7
+  - first:
+      213: 4273340584292383828
+    second: macgiap_idle_run_8
+  - first:
+      213: -6100621908727176139
+    second: macgiap_idle_run_9
+  - first:
+      213: -8122346446284530334
+    second: macgiap_idle_run_10
+  - first:
+      213: 3543849337576978151
+    second: macgiap_idle_run_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: macgiap_idle_run_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 171
+        width: 98
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e61d99240d9a90d0800000000000000
+      internalID: -3415244726203509022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 171
+        width: 96
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b38005f04a3753e0800000000000000
+      internalID: -2065117853463313481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 171
+        width: 91
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d71df38b4ce97810800000000000000
+      internalID: 1763700538173364180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 171
+        width: 90
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444f18bb86c04f130800000000000000
+      internalID: 3599515646137857092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_4
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 171
+        width: 92
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a76cbe0165877ef0800000000000000
+      internalID: -110473013941737563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 127
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0276d0174aceab0800000000000000
+      internalID: -4977422682688118587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 130
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32365fce64e9fd040800000000000000
+      internalID: 4674628965694268195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 17
+        width: 99
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b99db590c2d58910800000000000000
+      internalID: 1839107747438500276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 18
+        width: 99
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45cf10bce94fd4b30800000000000000
+      internalID: 4273340584292383828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 20
+        width: 98
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534e95d42bc365ba0800000000000000
+      internalID: -6100621908727176139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 20
+        width: 93
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ddd8ee0f0a74f80800000000000000
+      internalID: -8122346446284530334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiap_idle_run_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 15
+        width: 88
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e677c742384e2130800000000000000
+      internalID: 3543849337576978151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      macgiap_idle_run_0: -3415244726203509022
+      macgiap_idle_run_1: -2065117853463313481
+      macgiap_idle_run_10: -8122346446284530334
+      macgiap_idle_run_11: 3543849337576978151
+      macgiap_idle_run_2: 1763700538173364180
+      macgiap_idle_run_3: 3599515646137857092
+      macgiap_idle_run_4: -110473013941737563
+      macgiap_idle_run_5: -4977422682688118587
+      macgiap_idle_run_6: 4674628965694268195
+      macgiap_idle_run_7: 1839107747438500276
+      macgiap_idle_run_8: 4273340584292383828
+      macgiap_idle_run_9: -6100621908727176139
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: c736a4f7a3e96d84e8bad186ea12da05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4858659623129466638
+    second: macgiapcamgiao_idle_run_0
+  - first:
+      213: -6449971657891667196
+    second: macgiapcamgiao_idle_run_1
+  - first:
+      213: -3888132209433082290
+    second: macgiapcamgiao_idle_run_2
+  - first:
+      213: -884384659390960203
+    second: macgiapcamgiao_idle_run_3
+  - first:
+      213: 349528619197016937
+    second: macgiapcamgiao_idle_run_4
+  - first:
+      213: 5780008598462059877
+    second: macgiapcamgiao_idle_run_5
+  - first:
+      213: 8063075478238428636
+    second: macgiapcamgiao_idle_run_6
+  - first:
+      213: 2212416946945216311
+    second: macgiapcamgiao_idle_run_7
+  - first:
+      213: 1459321389183462216
+    second: macgiapcamgiao_idle_run_8
+  - first:
+      213: -5958138300025412628
+    second: macgiapcamgiao_idle_run_9
+  - first:
+      213: 5597095418139895460
+    second: macgiapcamgiao_idle_run_10
+  - first:
+      213: 6101466933448247497
+    second: macgiapcamgiao_idle_run_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 316
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8b5d6a0d2929cb0800000000000000
+      internalID: -4858659623129466638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 316
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403a70853f81d76a0800000000000000
+      internalID: -6449971657891667196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 169
+        width: 164
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e468cf01b549a0ac0800000000000000
+      internalID: -3888132209433082290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_3
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 169
+        width: 146
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd623486d80ab3f0800000000000000
+      internalID: -884384659390960203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_4
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 169
+        width: 143
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b22126d66c9d400800000000000000
+      internalID: 349528619197016937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_5
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 170
+        width: 124
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565d80e4237b63050800000000000000
+      internalID: 5780008598462059877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 127
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd709d6d6cc5ef60800000000000000
+      internalID: 8063075478238428636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 131
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f49b9cd7514be10800000000000000
+      internalID: 2212416946945216311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 21
+        width: 136
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84be867521d804410800000000000000
+      internalID: 1459321389183462216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_9
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 21
+        width: 137
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3e550a8c0705da0800000000000000
+      internalID: -5958138300025412628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 24
+        width: 284
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6e13cc0a0ecad40800000000000000
+      internalID: 5597095418139895460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_idle_run_11
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 29
+        width: 139
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c889f859d3cca450800000000000000
+      internalID: 6101466933448247497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      macgiapcamgiao_idle_run_0: -4858659623129466638
+      macgiapcamgiao_idle_run_1: -6449971657891667196
+      macgiapcamgiao_idle_run_10: 5597095418139895460
+      macgiapcamgiao_idle_run_11: 6101466933448247497
+      macgiapcamgiao_idle_run_2: -3888132209433082290
+      macgiapcamgiao_idle_run_3: -884384659390960203
+      macgiapcamgiao_idle_run_4: 349528619197016937
+      macgiapcamgiao_idle_run_5: 5780008598462059877
+      macgiapcamgiao_idle_run_6: 8063075478238428636
+      macgiapcamgiao_idle_run_7: 2212416946945216311
+      macgiapcamgiao_idle_run_8: 1459321389183462216
+      macgiapcamgiao_idle_run_9: -5958138300025412628
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
