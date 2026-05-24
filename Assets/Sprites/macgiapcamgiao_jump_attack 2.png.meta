@@ -1,0 +1,484 @@
+fileFormatVersion: 2
+guid: cfa64458da708d04882312838971f8a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2656085195308016965
+    second: macgiapcamgiao_jump_attack_0
+  - first:
+      213: 6394361300078195073
+    second: macgiapcamgiao_jump_attack_1
+  - first:
+      213: 6690024581990787804
+    second: macgiapcamgiao_jump_attack_2
+  - first:
+      213: -1662899589457771443
+    second: macgiapcamgiao_jump_attack_3
+  - first:
+      213: 5757456375578836049
+    second: macgiapcamgiao_jump_attack_4
+  - first:
+      213: -7929550597967596929
+    second: macgiapcamgiao_jump_attack_5
+  - first:
+      213: 5996382831641093549
+    second: macgiapcamgiao_jump_attack_6
+  - first:
+      213: 2070192714283836071
+    second: macgiapcamgiao_jump_attack_7
+  - first:
+      213: 5974278039215960687
+    second: macgiapcamgiao_jump_attack_8
+  - first:
+      213: 2890601568461806841
+    second: macgiapcamgiao_jump_attack_9
+  - first:
+      213: 1282855563019750340
+    second: macgiapcamgiao_jump_attack_10
+  - first:
+      213: 1827886494944384641
+    second: macgiapcamgiao_jump_attack_11
+  - first:
+      213: -7275602739683886060
+    second: macgiapcamgiao_jump_attack_12
+  - first:
+      213: 4348076890026918609
+    second: macgiapcamgiao_jump_attack_13
+  - first:
+      213: 999355479136458093
+    second: macgiapcamgiao_jump_attack_14
+  - first:
+      213: 6436680488376827528
+    second: macgiapcamgiao_jump_attack_15
+  - first:
+      213: 3319617505059575762
+    second: macgiapcamgiao_jump_attack_16
+  - first:
+      213: 5411523084261857616
+    second: macgiapcamgiao_jump_attack_17
+  - first:
+      213: 7745986201985442549
+    second: macgiapcamgiao_jump_attack_18
+  - first:
+      213: 499921612274013679
+    second: macgiapcamgiao_jump_attack_19
+  - first:
+      213: -8399910713856712569
+    second: macgiapcamgiao_jump_attack_20
+  - first:
+      213: 3432576697620848891
+    second: macgiapcamgiao_jump_attack_21
+  - first:
+      213: 6771312801711877662
+    second: macgiapcamgiao_jump_attack_22
+  - first:
+      213: 782557122258234909
+    second: macgiapcamgiao_jump_attack_23
+  - first:
+      213: -7089229674040220180
+    second: macgiapcamgiao_jump_attack_24
+  - first:
+      213: 3425658188173289957
+    second: macgiapcamgiao_jump_attack_25
+  - first:
+      213: -319699837734827459
+    second: macgiapcamgiao_jump_attack_26
+  - first:
+      213: 8224666886486823525
+    second: macgiapcamgiao_jump_attack_27
+  - first:
+      213: 1388501084237255791
+    second: macgiapcamgiao_jump_attack_28
+  - first:
+      213: 4588538214095187472
+    second: macgiapcamgiao_jump_attack_29
+  - first:
+      213: -4619377384270837269
+    second: macgiapcamgiao_jump_attack_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 204
+        width: 148
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c3f2cb11896ef40800000000000000
+      internalID: 5757456375578836049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 185
+        width: 159
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72b7a36eb394f190800000000000000
+      internalID: -7929550597967596929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_6
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 186
+        width: 143
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5e7394a6e673350800000000000000
+      internalID: 5996382831641093549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_7
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 181
+        width: 137
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a26d772e4dcabc10800000000000000
+      internalID: 2070192714283836071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_15
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 137
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e736a1dcea35950800000000000000
+      internalID: 6436680488376827528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_16
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 15
+        width: 182
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d79e336886a11e20800000000000000
+      internalID: 3319617505059575762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_17
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 137
+        width: 40
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059114bd297991b40800000000000000
+      internalID: 5411523084261857616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_28
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 24
+        width: 149
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64d4382162f44310800000000000000
+      internalID: 1388501084237255791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 24
+        width: 144
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ee271d133cdaf30800000000000000
+      internalID: 4588538214095187472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_30
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 24
+        width: 152
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be940175ebca4efb0800000000000000
+      internalID: -4619377384270837269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macgiapcamgiao_jump_attack_31
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 17
+        width: 120
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d495f074f6432fd45a185d77700326f5
+      internalID: 1714744424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ca0cc9dde3d42ae4b8d677cd9d09ba68
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      macgiapcamgiao_jump_attack_0: 2656085195308016965
+      macgiapcamgiao_jump_attack_1: 6394361300078195073
+      macgiapcamgiao_jump_attack_10: 1282855563019750340
+      macgiapcamgiao_jump_attack_11: 1827886494944384641
+      macgiapcamgiao_jump_attack_12: -7275602739683886060
+      macgiapcamgiao_jump_attack_13: 4348076890026918609
+      macgiapcamgiao_jump_attack_14: 999355479136458093
+      macgiapcamgiao_jump_attack_15: 6436680488376827528
+      macgiapcamgiao_jump_attack_16: 3319617505059575762
+      macgiapcamgiao_jump_attack_17: 5411523084261857616
+      macgiapcamgiao_jump_attack_18: 7745986201985442549
+      macgiapcamgiao_jump_attack_19: 499921612274013679
+      macgiapcamgiao_jump_attack_2: 6690024581990787804
+      macgiapcamgiao_jump_attack_20: -8399910713856712569
+      macgiapcamgiao_jump_attack_21: 3432576697620848891
+      macgiapcamgiao_jump_attack_22: 6771312801711877662
+      macgiapcamgiao_jump_attack_23: 782557122258234909
+      macgiapcamgiao_jump_attack_24: -7089229674040220180
+      macgiapcamgiao_jump_attack_25: 3425658188173289957
+      macgiapcamgiao_jump_attack_26: -319699837734827459
+      macgiapcamgiao_jump_attack_27: 8224666886486823525
+      macgiapcamgiao_jump_attack_28: 1388501084237255791
+      macgiapcamgiao_jump_attack_29: 4588538214095187472
+      macgiapcamgiao_jump_attack_3: -1662899589457771443
+      macgiapcamgiao_jump_attack_30: -4619377384270837269
+      macgiapcamgiao_jump_attack_31: 1714744424
+      macgiapcamgiao_jump_attack_4: 5757456375578836049
+      macgiapcamgiao_jump_attack_5: -7929550597967596929
+      macgiapcamgiao_jump_attack_6: 5996382831641093549
+      macgiapcamgiao_jump_attack_7: 2070192714283836071
+      macgiapcamgiao_jump_attack_8: 5974278039215960687
+      macgiapcamgiao_jump_attack_9: 2890601568461806841
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
