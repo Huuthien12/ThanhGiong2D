@@ -5,47 +5,46 @@ using System.Collections;
 public class MapPortal : MonoBehaviour
 {
     [Header("=== SETTINGS ===")]
-    public string sceneName = "Map2";
+    public string sceneName = "Map2"; // Tên scene muốn chuyển đến
 
     [Header("=== LOADING UI ===")]
-    public GameObject loadingPanel;
-    public float loadingDelay = 2f; // Thời gian hiển thị loading (2 giây)
+    public float loadingDelay = 2f;    // Thời gian hiển thị loading
 
     private bool isTeleporting = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Kiểm tra nếu là Player chạm vào và chưa trong trạng thái dịch chuyển
         if (collision.CompareTag("Player") && !isTeleporting)
         {
-            StartCoroutine(TeleportCoroutine(collision.gameObject));
+            isTeleporting = true;
+
+            // Tìm kiếm LoadingPanelHandler độc lập xuyên màn chơi
+            if (LoadingPanelHandler.Instance != null)
+            {
+                // Gọi màn hình chờ bật lên, sau 2 giây tự động gọi hàm nạp scene mới
+                LoadingPanelHandler.Instance.StartLoadingCoroutine(loadingDelay, () =>
+                {
+                    XulyChuyenScene();
+                });
+            }
+            else
+            {
+                // Nếu không thấy màn hình chờ (ví dụ test nhanh), chuyển thẳng scene luôn
+                XulyChuyenScene();
+            }
         }
     }
 
-    IEnumerator TeleportCoroutine(GameObject player)
+    void XulyChuyenScene()
     {
-        isTeleporting = true;
+        // Ghi nhận cổng đi ra để Map tiếp theo biết chỗ dịch chuyển Player tới
+        // Ví dụ: Nếu đang ở Map1 đi qua, lưu lại "FromMap1"
+        string currentScene = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetString("TargetTeleportID", "From" + currentScene);
+        PlayerPrefs.Save();
 
-        // Bật loading panel
-        if (loadingPanel != null)
-        {
-            loadingPanel.SetActive(true);
-            Debug.Log("🔵 Bật loading panel, chờ 2 giây...");
-        }
-
-        // Chờ 2 giây
-        yield return new WaitForSeconds(loadingDelay);
-
-        // Reset máu
-        HealthManager healthManager = player.GetComponent<HealthManager>();
-        if (healthManager != null)
-        {
-            healthManager.ResetHealthForNewMap();
-        }
-
-        // Chuyển scene
-        Debug.Log($"📱 Chuyển sang scene: {sceneName}");
+        // Nạp màn chơi mới
         SceneManager.LoadScene(sceneName);
-
-        isTeleporting = false;
     }
 }

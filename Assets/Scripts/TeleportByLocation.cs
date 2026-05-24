@@ -1,30 +1,28 @@
 ﻿using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class TeleportByLocation : MonoBehaviour
 {
     [Header("=== TELEPORT SETTINGS ===")]
-    public Transform targetTeleportPoint;  // Điểm đến (kéo TeleportPoint vào đây)
-    public GameObject player;               // Nhân vật (kéo Player vào đây)
-    public KeyCode interactKey = KeyCode.W; // Phím để teleport
+    public Transform targetTeleportPoint;  // Điểm đến nội bộ trong cùng map (kéo Transform vào đây)
+    public GameObject player;               // Nhân vật (Sẽ tự động tìm tag "Player" nếu bỏ trống)
+    public KeyCode interactKey = KeyCode.W; // Phím để kích hoạt dịch chuyển
 
     [Header("=== SCENE TELEPORT ===")]
-    public bool teleportToDifferentScene = false;  // Có teleport sang scene khác không?
-    public string targetSceneName;                  // Tên scene đích (VD: "Map2")
-    public string targetTeleportPointID = "StartPoint"; // ID của điểm đến ở scene mới
+    public bool teleportToDifferentScene = false;  // Tích vào nếu muốn chuyển sang map khác
+    public string targetSceneName;                  // Tên scene đích xác (VD: "Map2")
+    public string targetTeleportPointID = "FromMap1"; // ID của điểm đón ở map mới (VD: "FromMap1", "FromMap2")
 
     [Header("=== UI SETTINGS ===")]
-    public string locationName = "Map 1";   // Tên hiển thị
-    public GameObject interactUI;           // UI thông báo (Panel chứa Text)
+    public string locationName = "Cổng Dịch Chuyển"; // Tên khu vực hiển thị lên giao diện
+    public GameObject interactUI;           // Panel chữ hướng dẫn "Nhấn W để..."
     public Color textColor = Color.white;
 
     [Header("=== EFFECTS (tùy chọn) ===")]
-    public float teleportDelay = 0.5f;      // Delay trước khi teleport
-    public AudioClip teleportSound;         // Âm thanh khi teleport
-    public GameObject loadingPanel;         // Panel loading
+    public float teleportDelay = 2f;      // Thời gian hiển thị màn hình chờ (Nên để tầm 2s cho mượt)
+    public AudioClip teleportSound;         // Âm thanh hiệu ứng dịch chuyển
 
     private bool isNearPortal = false;
     private bool isTeleporting = false;
@@ -32,34 +30,30 @@ public class TeleportByLocation : MonoBehaviour
 
     void Start()
     {
-        // Tìm player nếu chưa gán
+        // Tự động tìm kiếm Player gốc đi xuyên map nếu biến này bị trống
         if (player == null)
             player = GameObject.FindGameObjectWithTag("Player");
 
-        // Tắt UI tương tác khi chưa đến gần
+        // Ẩn UI thông báo tương tác lúc mới vào màn chơi
         if (interactUI != null)
             interactUI.SetActive(false);
 
-        // Lấy text từ UI
+        // Khởi tạo nội dung văn bản hướng dẫn trên UI
         if (interactUI != null)
         {
             interactText = interactUI.GetComponentInChildren<TextMeshProUGUI>();
-            if (interactText != null)
-                interactText.text = $"Nhấn {interactKey} để đến {locationName}";
+            CapNhatVanBanHuongDan();
         }
-
-        if (loadingPanel != null)
-            loadingPanel.SetActive(false);
 
         Debug.Log($"✅ Đã khởi tạo portal: {locationName} (Nhấn {interactKey} để teleport)");
     }
 
     void Update()
     {
-        // Kiểm tra nếu đang ở gần portal và nhấn phím W
+        // Kiểm tra điều kiện: Đứng cạnh cổng + Chưa trong trạng thái dịch chuyển + Nhấn nút tương tác
         if (isNearPortal && !isTeleporting && Input.GetKeyDown(interactKey))
         {
-            OnTeleport();
+            KichHoatDichChuyen();
         }
     }
 
@@ -68,13 +62,16 @@ public class TeleportByLocation : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isNearPortal = true;
+
+            // Cập nhật lại tham chiếu để bắt trúng ông Player gốc vừa chuyển map sang
+            player = other.gameObject;
+
             if (interactUI != null)
             {
+                CapNhatVanBanHuongDan();
                 interactUI.SetActive(true);
-                if (interactText != null)
-                    interactText.text = $"Nhấn {interactKey} để đến {locationName}";
             }
-            Debug.Log($"🟢 Đến gần {locationName}, nhấn {interactKey} để teleport");
+            Debug.Log($"🟢 Đến gần {locationName}, nhấn {interactKey} để tiến vào.");
         }
     }
 
@@ -85,77 +82,94 @@ public class TeleportByLocation : MonoBehaviour
             isNearPortal = false;
             if (interactUI != null)
                 interactUI.SetActive(false);
-            Debug.Log($"🔴 Rời khỏi {locationName}");
+            Debug.Log($"🔴 Đã rời xa vùng tương tác của {locationName}");
         }
     }
 
-    void OnTeleport()
+    void CapNhatVanBanHuongDan()
     {
-        StartCoroutine(TeleportCoroutine());
+        if (interactText != null)
+        {
+            interactText.color = textColor;
+            interactText.text = $"Nhấn [{interactKey}] để đến {locationName}";
+        }
     }
 
-    IEnumerator TeleportCoroutine()
+    void KichHoatDichChuyen()
     {
         isTeleporting = true;
 
-        // Tắt UI
+        // Ẩn ngay lập tức khung chữ "Nhấn W" để giao diện sạch sẽ
         if (interactUI != null)
             interactUI.SetActive(false);
 
-        // Bật loading panel
-        if (loadingPanel != null)
-            loadingPanel.SetActive(true);
-
-        // Phát âm thanh
+        // Phát âm thanh dịch chuyển tại tọa độ cổng nếu có cài đặt
         if (teleportSound != null)
             AudioSource.PlayClipAtPoint(teleportSound, transform.position);
 
-        // Chờ delay
-        yield return new WaitForSeconds(teleportDelay);
-
-        // Teleport
+        // KIỂM TRA: Nếu chuyển map, gọi màn hình chờ thông minh xử lý xuyên scene
         if (teleportToDifferentScene)
         {
-            // Lưu ID điểm đến để scene mới biết đặt player ở đâu
-            PlayerPrefs.SetString("TargetTeleportID", targetTeleportPointID);
-            PlayerPrefs.Save();
-
-            // Chuyển scene
-            SceneManager.LoadScene(targetSceneName);
+            if (LoadingPanelHandler.Instance != null)
+            {
+                // Truyền lệnh: Bật màn hình Thánh Gióng lên -> Chờ đếm giây -> Thực hiện hàm ThucHienChuyenScene
+                LoadingPanelHandler.Instance.StartLoadingCoroutine(teleportDelay, () =>
+                {
+                    ThucHienChuyenScene();
+                });
+            }
+            else
+            {
+                // Phương án dự phòng nếu chưa có LoadingPanelHandler trong scene, chuyển thẳng luôn
+                ThucHienChuyenScene();
+            }
         }
         else
         {
-            // Teleport trong cùng scene
-            if (targetTeleportPoint == null)
-            {
-                Debug.LogError("❌ Chưa gán Target Teleport Point cho " + locationName);
-                isTeleporting = false;
-                yield break;
-            }
+            // Nếu chỉ dịch chuyển nội bộ trong cùng một bản đồ, chạy Coroutine đếm giây ngắn tại chỗ
+            StartCoroutine(TeleportNoiBoCoroutine());
+        }
+    }
 
-            if (player == null)
-            {
-                Debug.LogError("❌ Chưa gán Player cho " + locationName);
-                isTeleporting = false;
-                yield break;
-            }
+    void ThucHienChuyenScene()
+    {
+        // Ghi lại ID điểm đến vào bộ nhớ để Map tiếp theo nạp lên biết lối xếp vị trí nhân vật
+        PlayerPrefs.SetString("TargetTeleportID", targetTeleportPointID);
+        PlayerPrefs.Save();
 
-            Vector3 newPosition = targetTeleportPoint.position;
-            player.transform.position = newPosition;
-            Debug.Log($"✨ Teleport thành công đến {locationName} tại vị trí {newPosition}");
+        // Tiến hành nạp map mới
+        SceneManager.LoadScene(targetSceneName);
+    }
+
+    // Coroutine xử lý dịch chuyển nội bộ trong cùng Scene
+    IEnumerator TeleportNoiBoCoroutine()
+    {
+        // Nếu bạn muốn dịch chuyển nội bộ cũng hiện ảnh Thánh Gióng, bật nó lên ở đây
+        if (LoadingPanelHandler.Instance != null)
+            LoadingPanelHandler.Instance.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(teleportDelay);
+
+        if (targetTeleportPoint != null && player != null)
+        {
+            player.transform.position = targetTeleportPoint.position;
+            Debug.Log($"✨ Dịch chuyển nội bộ thành công đến {locationName} tại {targetTeleportPoint.position}");
+        }
+        else
+        {
+            Debug.LogError($"❌ Thiếu dữ liệu điểm đến hoặc Player tại cổng {locationName}!");
         }
 
-        // Tắt loading panel
-        if (loadingPanel != null)
-            loadingPanel.SetActive(false);
+        // Tắt ảnh Thánh Gióng sau khi dịch chuyển nội bộ xong
+        if (LoadingPanelHandler.Instance != null)
+            LoadingPanelHandler.Instance.gameObject.SetActive(false);
 
         isTeleporting = false;
     }
 
-    // Vẽ vùng teleport trong Scene view
+    // Vẽ đường liên kết trực quan trong giao diện Scene Editor của Unity
     void OnDrawGizmos()
     {
-        // Vùng trigger
         Gizmos.color = Color.cyan;
         Collider2D col = GetComponent<Collider2D>();
         if (col != null)
@@ -163,12 +177,11 @@ public class TeleportByLocation : MonoBehaviour
             Gizmos.DrawWireCube(transform.position, col.bounds.size);
         }
 
-        // Đường đến điểm đích
         if (targetTeleportPoint != null)
         {
             Gizmos.color = Color.green;
             Gizmos.DrawLine(transform.position, targetTeleportPoint.position);
-            Gizmos.DrawWireSphere(targetTeleportPoint.position, 0.5f);
+            Gizmos.DrawWireSphere(targetTeleportPoint.position, 0.4f);
         }
     }
 }
