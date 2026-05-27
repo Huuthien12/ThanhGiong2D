@@ -5,130 +5,164 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
-    [Header("Panels")]
+    public static GameManager Instance { get; private set; }
+
+    [Header("=== PANELS ===")]
     public GameObject gameOverPanel;
 
-    [Header("Player")]
+    [Header("=== PLAYER ===")]
     public HealthManager playerHealth;
+    private PlayerControl playerControl;
 
-    // =====================================================
-    // MAP 1 - ĂN COM
-    // =====================================================
-
-    [Header("MAP 1 - Thu thập Com")]
+    [Header("=== NHIỆM VỤ ===")]
     public bool suDungNhiemVuCom = true;
+    public bool suDungNhiemVuDietQuai = false;
 
+    [Header("=== CẤU HÌNH MAP 1 ===")]
     public int soComCanThu = 10;
     private int soComDaThu = 0;
 
-    // =====================================================
-    // MAP 2 / MAP 3 - DIỆT QUÁI
-    // =====================================================
-
-    [Header("MAP 2/3 - Tiêu diệt quái")]
-    public bool suDungNhiemVuDietQuai = false;
-
-    public int soQuaiCanDiet = 5;
+    [Header("=== CẤU HÌNH MAP 2/3 ===")]
+    public int soQuaiCanDiet = 8;
     private int soQuaiDaDiet = 0;
 
-    // =====================================================
-    // CỬA / SQUARE
-    // =====================================================
-
-    [Header("Square chặn đường")]
-    public List<GameObject> blockingSquares;
-    public List<Collider2D> squareColliders;
-
+    [Header("=== SQUARE CHẶN ĐƯỜNG ===")]
+    public List<GameObject> blockingSquares = new List<GameObject>();
     private bool daMoKhoa = false;
 
-    [Header("UI")]
+    [Header("=== UI GIAO DIỆN ===")]
     public Text textNhiemVu;
     public GameObject thongBaoMoKhoa;
 
-    [Header("Hiệu ứng")]
+    [Header("=== MÀU SẮC ===")]
     public Color mauSquareKhiKhoa = new Color(0.8f, 0.2f, 0.2f, 1f);
     public Color mauSquareKhiMo = new Color(0.2f, 0.8f, 0.2f, 0.5f);
 
-    private List<SpriteRenderer> squareSpriteRenderers = new List<SpriteRenderer>();
+    // LƯU TRỮ DỮ LIỆU KHI CHUYỂN MAP
+    private static int luuSoComDaThu = 0;
+    private static int luuSoQuaiDaDiet = 0;
+    private static bool luuDaMoKhoa = false;
+    public bool daQuaMapTruoc = false;
 
-    void Start()
+    void Awake()
+    {
+        /*if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }*/
+        Instance = this;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log($"📱 Load scene: {scene.name}");
+
+        // Khôi phục dữ liệu từ biến tĩnh
+        soComDaThu = luuSoComDaThu;
+        soQuaiDaDiet = luuSoQuaiDaDiet;
+        daMoKhoa = luuDaMoKhoa;
+
+        Debug.Log($"📊 Khôi phục: Com={soComDaThu}/{soComCanThu}, Quai={soQuaiDaDiet}/{soQuaiCanDiet}, MoKhoa={daMoKhoa}");
+
+        // Reset danh sách square (sẽ tìm lại trong scene mới)
+        blockingSquares.Clear();
+
+        KhoiTaoManChoiHienTai(scene.name);
+    }
+
+    void KhoiTaoManChoiHienTai(string currentSceneName)
     {
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
 
-        if (playerHealth == null)
+        // 1. Phân chia nhiệm vụ theo map
+        if (currentSceneName == "Map2_1")
         {
-            playerHealth = FindFirstObjectByType<HealthManager>();
+            suDungNhiemVuCom = true;
+            suDungNhiemVuDietQuai = false;
+        }
+        else if (currentSceneName == "Map2_2" || currentSceneName == "Map2_3")
+        {
+            suDungNhiemVuCom = false;
+            suDungNhiemVuDietQuai = true;
         }
 
+        // 2. Tìm player
+        playerControl = FindFirstObjectByType<PlayerControl>();
+        playerHealth = FindFirstObjectByType<HealthManager>();
+
+        // 3. Tìm UI
+        if (textNhiemVu == null)
+            textNhiemVu = GameObject.Find("TextNhiemVu")?.GetComponent<Text>();
+        if (thongBaoMoKhoa == null)
+            thongBaoMoKhoa = GameObject.Find("ThongBaoMoKhoa");
+        if (gameOverPanel == null)
+            gameOverPanel = GameObject.Find("GameOverPanel");
+
+        // 4. Khởi tạo square
         KhoiTaoTatCaSquare();
 
         if (thongBaoMoKhoa != null)
             thongBaoMoKhoa.SetActive(false);
 
         CapNhatUI();
-    }
 
-    // =====================================================
-    // KHỞI TẠO SQUARE
-    // =====================================================
+        // Nếu đã mở khóa từ trước, mở luôn square trong scene mới
+        if (daMoKhoa)
+        {
+            MoKhoaTatCaSquare();
+        }
+    }
 
     void KhoiTaoTatCaSquare()
     {
+        // Tìm tất cả square trong scene hiện tại
+        if (blockingSquares == null || blockingSquares.Count == 0)
+        {
+            GameObject[] foundSquares = GameObject.FindGameObjectsWithTag("BlockingSquare");
+            blockingSquares = new List<GameObject>(foundSquares);
+            Debug.Log($"🔍 Tìm thấy {blockingSquares.Count} BlockingSquare trong scene");
+        }
+
         for (int i = 0; i < blockingSquares.Count; i++)
         {
-            if (blockingSquares[i] == null) continue;
-
-            Collider2D col = blockingSquares[i].GetComponent<Collider2D>();
-
-            if (col != null)
+            if (blockingSquares[i] != null)
             {
-                col.isTrigger = false;
-            }
+                Collider2D col = blockingSquares[i].GetComponent<Collider2D>();
+                if (col != null) col.isTrigger = false;
 
-            squareColliders.Add(col);
-
-            SpriteRenderer sr = blockingSquares[i].GetComponent<SpriteRenderer>();
-
-            squareSpriteRenderers.Add(sr);
-
-            if (sr != null)
-            {
-                sr.color = mauSquareKhiKhoa;
+                SpriteRenderer sr = blockingSquares[i].GetComponent<SpriteRenderer>();
+                if (sr != null) sr.color = mauSquareKhiKhoa;
             }
         }
     }
-
-    // =====================================================
-    // UPDATE
-    // =====================================================
-
-    void Update()
-    {
-        if (playerHealth != null && !playerHealth.IsAlive())
-        {
-            if (!gameOverPanel.activeSelf)
-            {
-                GameOver();
-            }
-        }
-    }
-
-    // =====================================================
-    // MAP 1 - ĂN COM
-    // =====================================================
 
     public void ThuThapCom()
     {
-        if (!suDungNhiemVuCom) return;
-
-        if (daMoKhoa) return;
+        if (!suDungNhiemVuCom || daMoKhoa) return;
 
         soComDaThu++;
+        Debug.Log($"🍙 Thu thập com: {soComDaThu}/{soComCanThu}");
 
-        Debug.Log("🍙 Đã ăn com: " + soComDaThu);
+        // LƯU VÀO BIẾN TĨNH
+        luuSoComDaThu = soComDaThu;
 
         CapNhatUI();
+
+        // Biến hình khi đủ 10 com
+        if (soComDaThu >= 10)
+        {
+            if (playerControl != null && playerControl.currentForm == PlayerControl.PlayerForm.Baby)
+            {
+                playerControl.ChangeForm(PlayerControl.PlayerForm.Adult);
+            }
+        }
 
         if (soComDaThu >= soComCanThu)
         {
@@ -136,19 +170,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // =====================================================
-    // MAP 2/3 - DIỆT QUÁI
-    // =====================================================
-
     public void QuaiBiTieuDiet()
     {
-        if (!suDungNhiemVuDietQuai) return;
-
-        if (daMoKhoa) return;
+        if (!suDungNhiemVuDietQuai || daMoKhoa) return;
 
         soQuaiDaDiet++;
+        Debug.Log($"💀 Tiêu diệt quái: {soQuaiDaDiet}/{soQuaiCanDiet}");
 
-        Debug.Log("💀 Đã diệt quái: " + soQuaiDaDiet);
+        // LƯU VÀO BIẾN TĨNH
+        luuSoQuaiDaDiet = soQuaiDaDiet;
 
         CapNhatUI();
 
@@ -158,85 +188,35 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // =====================================================
-    // MỞ KHÓA
-    // =====================================================
-
     private void MoKhoaTatCaSquare()
     {
-        Debug.Log("=== BẮT ĐẦU MỞ KHÓA SQUARE ===");
-        Debug.Log($"daMoKhoa trước khi mở: {daMoKhoa}");
+        if (daMoKhoa) return;
 
         daMoKhoa = true;
+        luuDaMoKhoa = true; // LƯU TRẠNG THÁI ĐÃ MỞ KHÓA
 
-        Debug.Log($"Số lượng blockingSquares trong danh sách: {blockingSquares.Count}");
+        Debug.Log("🎉 MỞ KHÓA TẤT CẢ SQUARE!");
 
         for (int i = 0; i < blockingSquares.Count; i++)
         {
-            GameObject square = blockingSquares[i];
-
-            if (square == null)
+            if (blockingSquares[i] != null)
             {
-                Debug.LogError($"Square {i} là NULL! Hãy kiểm tra lại trong Inspector");
-                continue;
-            }
-
-            Debug.Log($"\n--- Đang xử lý Square {i}: {square.name} ---");
-            Debug.Log($"Square có đang active không? {square.activeSelf}");
-            Debug.Log($"Vị trí Square: {square.transform.position}");
-
-            // Kiểm tra SquareBlocker
-            SquareBlocker blocker = square.GetComponent<SquareBlocker>();
-            if (blocker != null)
-            {
-                Debug.Log($"Tìm thấy SquareBlocker trên {square.name}");
-                blocker.MoKhoa();
-            }
-            else
-            {
-                Debug.LogWarning($"KHÔNG tìm thấy SquareBlocker trên {square.name}, tự xử lý...");
-
-                // Cách 1: TẮT HẲN GAMEOBJECT - chắc chắn nhất
-                square.SetActive(false);
-                Debug.Log($"Đã tắt GameObject {square.name}");
-
-                // Cách 2: Tắt Collider
-                Collider2D col = square.GetComponent<Collider2D>();
-                if (col != null)
-                {
-                    col.enabled = false;
-                    Debug.Log($"Đã tắt Collider của {square.name}");
-                }
-
-                // Đổi màu
-                SpriteRenderer sr = square.GetComponent<SpriteRenderer>();
-                if (sr != null)
-                {
-                    sr.color = mauSquareKhiMo;
-                }
+                blockingSquares[i].SetActive(false);
+                Debug.Log($"  ✓ Đã tắt {blockingSquares[i].name}");
             }
         }
 
-        // Hiện thông báo
         if (thongBaoMoKhoa != null)
         {
             thongBaoMoKhoa.SetActive(true);
-            Invoke("AnThongBao", 10f);
+            Invoke("AnThongBao", 2f);
         }
-
-        Debug.Log("=== KẾT THÚC MỞ KHÓA ===");
     }
+
     void AnThongBao()
     {
-        if (thongBaoMoKhoa != null)
-        {
-            thongBaoMoKhoa.SetActive(false);
-        }
+        if (thongBaoMoKhoa != null) thongBaoMoKhoa.SetActive(false);
     }
-
-    // =====================================================
-    // UI
-    // =====================================================
 
     void CapNhatUI()
     {
@@ -244,44 +224,33 @@ public class GameManager : MonoBehaviour
 
         if (suDungNhiemVuCom)
         {
-            textNhiemVu.text =
-                "🍙 Com: " + soComDaThu + " / " + soComCanThu;
+            textNhiemVu.text = "🍙 Com: " + soComDaThu + " / " + soComCanThu;
         }
-
-        if (suDungNhiemVuDietQuai)
+        else if (suDungNhiemVuDietQuai)
         {
-            textNhiemVu.text =
-                "💀 Quái: " + soQuaiDaDiet + " / " + soQuaiCanDiet;
+            textNhiemVu.text = "💀 Quái: " + soQuaiDaDiet + " / " + soQuaiCanDiet;
         }
     }
-
-    // =====================================================
-    // GAME OVER
-    // =====================================================
 
     public void GameOver()
     {
         if (gameOverPanel.activeSelf) return;
 
         Time.timeScale = 0f;
-
         gameOverPanel.SetActive(true);
-
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-    }
-    public void PlayerDied()
-    {
-        if (!gameOverPanel.activeSelf)
-        {
-            GameOver();
-        }
     }
 
     public void RetryGame()
     {
         Time.timeScale = 1f;
-
+        soComDaThu = 0;
+        soQuaiDaDiet = 0;
+        luuSoComDaThu = 0;
+        luuSoQuaiDaDiet = 0;
+        luuDaMoKhoa = false;
+        daMoKhoa = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -289,6 +258,30 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
 
+        // Reset toàn bộ dữ liệu
+        soComDaThu = 0;
+        soQuaiDaDiet = 0;
+        luuSoComDaThu = 0;
+        luuSoQuaiDaDiet = 0;
+        luuDaMoKhoa = false;
+        daMoKhoa = false;
+        daQuaMapTruoc = false;
+
+        Destroy(gameObject);
         SceneManager.LoadScene("MenuScene");
+    }
+
+    public void ChuyenMap(string tenMapMoi)
+    {
+        daQuaMapTruoc = true; // Đánh dấu đã qua map
+        SceneManager.LoadScene(tenMapMoi);
+    }
+
+    public void PlayerDied()
+    {
+        if (!gameOverPanel.activeSelf)
+        {
+            GameOver();
+        }
     }
 }

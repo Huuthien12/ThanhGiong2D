@@ -93,4 +93,27 @@ public class AudioManager : MonoBehaviour
     {
         masterVolume = volume;
     }
-}
+
+    // ================= HÀM THÊM MỚI ĐỂ ĐIỀU KHIỂN NHẠC MENU (Đã đưa vào trong Class) =================
+
+    // Hàm dùng để tắt nhạc nền (Gọi khi bấm nút Bắt đầu để chuẩn bị xem video)
+    public void StopMusic()
+    {
+        if (musicSource != null && musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
+    }
+
+    // Hàm dùng để đổi bài nhạc nền khác khi cần (Ví dụ: Qua Map1 đổi nhạc chiến đấu)
+    public void ChangeBackgroundMusic(AudioClip newMusic)
+    {
+        if (musicSource != null)
+        {
+            musicSource.Stop();
+            backgroundMusic = newMusic;
+            musicSource.clip = newMusic;
+            musicSource.Play();
+        }
+    }
+} // Dấu ngoặc nhọn kết thúc Class nằm ở cuối cùng này

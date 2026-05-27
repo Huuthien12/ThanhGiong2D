@@ -64,6 +64,7 @@ public class VatPhamCom : MonoBehaviour
 
                 // 5. BIẾN MẤT HẠT CƠM KHỎI BẢN ĐỒ
                 Destroy(gameObject);
+ 
             }
         }
     }

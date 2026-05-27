@@ -4,10 +4,10 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     [Header("Scene Names")]
-    public string gameSceneName = "GameScene";
+    public string gameSceneName = "CutsceneScene"; // Tên scene chứa video riêng biệt
 
     [Header("Popup Confirm")]
-    public GameObject confirmQuitPanel;  // Kéo ConfirmQuitPanel vào đây
+    public GameObject confirmQuitPanel;  // Kéo ConfirmQuitPanel của bạn vào đây
 
     void Start()
     {
@@ -16,39 +16,34 @@ public class MenuManager : MonoBehaviour
             confirmQuitPanel.SetActive(false);
     }
 
+    // Hàm này gắn vào nút BẮT ĐẦU (btnStart)
     public void StartGame()
+    {
+        // Gọi thẳng tới AudioManager có sẵn: "Hãy tắt nhạc nền Menu đi!"
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.StopMusic();
+        }
+
+        // Chuyển sang Scene chạy video
+        LoadGameScene();
+    }
+
+    void LoadGameScene()
     {
         SceneManager.LoadScene(gameSceneName);
     }
 
-    // Gọi khi bấm nút Quit (thay vì quit ngay)
-    public void ShowConfirmQuit()
-    {
-        if (confirmQuitPanel != null)
-            confirmQuitPanel.SetActive(true);
-
-        // Tùy chọn: dừng thời gian nếu muốn (không cần thiết trong menu)
-        // Time.timeScale = 0f;
-    }
-
-    // Gọi khi bấm "CÓ" trong popup
+    // ================= GIỮ NGUYÊN CÁC HÀM CŨ CỦA BẠN =================
+    public void ShowConfirmQuit() { if (confirmQuitPanel != null) confirmQuitPanel.SetActive(true); }
     public void ConfirmQuit()
     {
         Debug.Log("Thoát game!");
-
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
     }
-
-    // Gọi khi bấm "KHÔNG" trong popup
-    public void CancelQuit()
-    {   
-        if (confirmQuitPanel != null)
-            confirmQuitPanel.SetActive(false);
-
-        // Time.timeScale = 1f; // Bỏ comment nếu có dừng thời gian
-    }
+    public void CancelQuit() { if (confirmQuitPanel != null) confirmQuitPanel.SetActive(false); }
 }
