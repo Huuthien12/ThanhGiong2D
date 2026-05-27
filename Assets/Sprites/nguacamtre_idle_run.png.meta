@@ -1,0 +1,463 @@
+fileFormatVersion: 2
+guid: f804710bd0134144ca16db4d336e3d31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3833218750164956520
+    second: nguacamtre_idle_run_0
+  - first:
+      213: 818712844369256132
+    second: nguacamtre_idle_run_1
+  - first:
+      213: 502444386524731551
+    second: nguacamtre_idle_run_2
+  - first:
+      213: -5305903415241892302
+    second: nguacamtre_idle_run_3
+  - first:
+      213: 4529555032212996153
+    second: nguacamtre_idle_run_4
+  - first:
+      213: -3971240547427451857
+    second: nguacamtre_idle_run_5
+  - first:
+      213: 1715401314798910340
+    second: nguacamtre_idle_run_6
+  - first:
+      213: 5396008269914684559
+    second: nguacamtre_idle_run_7
+  - first:
+      213: -4365262104199742201
+    second: nguacamtre_idle_run_8
+  - first:
+      213: 4453571119650355833
+    second: nguacamtre_idle_run_9
+  - first:
+      213: -6614997326640621136
+    second: nguacamtre_idle_run_10
+  - first:
+      213: 5348083451685875399
+    second: nguacamtre_idle_run_11
+  - first:
+      213: 8844764206223493483
+    second: nguacamtre_idle_run_12
+  - first:
+      213: 6093313140982377401
+    second: nguacamtre_idle_run_13
+  - first:
+      213: 5854582592167112823
+    second: nguacamtre_idle_run_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 211
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865f2fdd424523530800000000000000
+      internalID: 3833218750164956520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 339
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cedda58ef6ac5b00800000000000000
+      internalID: 818712844369256132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 339
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98123ae18a09f600800000000000000
+      internalID: 502444386524731551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 211
+        width: 128
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e99f9a4f4ad56b0800000000000000
+      internalID: -5305903415241892302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 211
+        width: 127
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93083ad9d463cde30800000000000000
+      internalID: 4529555032212996153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 211
+        width: 129
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c75fc33c153e8c0800000000000000
+      internalID: -3971240547427451857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_6
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 211
+        width: 123
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bb3df38645ec710800000000000000
+      internalID: 1715401314798910340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_9
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 40
+        width: 154
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ab2b856534ecd30800000000000000
+      internalID: 4453571119650355833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 37
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b95d6baafec234a0800000000000000
+      internalID: -6614997326640621136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 37
+        width: 148
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cea1ee5095383a40800000000000000
+      internalID: 5348083451685875399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 37
+        width: 148
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b698a0a1f2aeeba70800000000000000
+      internalID: 8844764206223493483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_13
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 36
+        width: 134
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb6979940ccf8450800000000000000
+      internalID: 6093313140982377401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamtre_idle_run_14
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 35
+        width: 133
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7707e4249d7af3150800000000000000
+      internalID: 5854582592167112823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3ce2d3349cacc5e4fbb03118ae6de6da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nguacamtre_idle_run_0: 3833218750164956520
+      nguacamtre_idle_run_1: 818712844369256132
+      nguacamtre_idle_run_10: -6614997326640621136
+      nguacamtre_idle_run_11: 5348083451685875399
+      nguacamtre_idle_run_12: 8844764206223493483
+      nguacamtre_idle_run_13: 6093313140982377401
+      nguacamtre_idle_run_14: 5854582592167112823
+      nguacamtre_idle_run_2: 502444386524731551
+      nguacamtre_idle_run_3: -5305903415241892302
+      nguacamtre_idle_run_4: 4529555032212996153
+      nguacamtre_idle_run_5: -3971240547427451857
+      nguacamtre_idle_run_6: 1715401314798910340
+      nguacamtre_idle_run_7: 5396008269914684559
+      nguacamtre_idle_run_8: -4365262104199742201
+      nguacamtre_idle_run_9: 4453571119650355833
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

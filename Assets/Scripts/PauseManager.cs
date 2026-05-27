@@ -51,6 +51,7 @@ public class PauseManager : MonoBehaviour
 
     public void RestartGame()
     {
+        isPaused = false;
         Time.timeScale = 1f;  // QUAN TRỌNG: reset time trước khi restart
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

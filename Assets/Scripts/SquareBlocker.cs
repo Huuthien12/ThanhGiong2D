@@ -12,10 +12,17 @@ public class SquareBlocker : MonoBehaviour
 
     void Start()
     {
+        // ✅ Dùng trực tiếp daMoKhoa (đã là public)
+        if (GameManager.Instance != null && GameManager.Instance.DaMoKhoa)
+        {
+            Debug.Log($"[SquareBlocker] {gameObject.name} đã được mở khóa từ trước, tự hủy!");
+            gameObject.SetActive(false);
+            return;
+        }
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
 
-        // Trạng thái khóa ban đầu
         if (spriteRenderer != null)
         {
             spriteRenderer.color = mauKhoa;
@@ -27,47 +34,23 @@ public class SquareBlocker : MonoBehaviour
             col.enabled = true;
         }
 
-        Debug.Log($"[SquareBlocker] Khởi tạo {gameObject.name}: Collider={col != null}, Sprite={spriteRenderer != null}");
+        Debug.Log($"[SquareBlocker] Khởi tạo {gameObject.name}");
     }
 
-    // Hàm được GameManager gọi khi mở khóa
     public void MoKhoa()
     {
-        Debug.Log($"[SquareBlocker] MoKhoa() được gọi trên {gameObject.name}");
+        if (daMo) return;
 
-        if (daMo)
-        {
-            Debug.Log($"[SquareBlocker] {gameObject.name} đã mở rồi!");
-            return;
-        }
-
+        Debug.Log($"[SquareBlocker] MoKhoa() trên {gameObject.name}");
         daMo = true;
-
-        // TẮT HẲN GAMEOBJECT - cách chắc chắn nhất
         gameObject.SetActive(false);
-        Debug.Log($"[SquareBlocker] Đã tắt {gameObject.name}");
-
-        // Hoặc chỉ tắt collider
-        /*
-        if (col != null)
-        {
-            col.enabled = false;
-            Debug.Log($"[SquareBlocker] Đã tắt Collider của {gameObject.name}");
-        }
-
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.color = mauMo;
-        }
-        */
     }
 
-    // Debug: Kiểm tra trạng thái hiện tại
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log($"[SquareBlocker] {gameObject.name}: Player chạm vào. daMo={daMo}, isTrigger={col.isTrigger}, enabled={col.enabled}");
+            Debug.Log($"[SquareBlocker] {gameObject.name}: Player chạm vào. daMo={daMo}");
         }
     }
 }

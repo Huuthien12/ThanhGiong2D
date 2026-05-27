@@ -1,0 +1,409 @@
+fileFormatVersion: 2
+guid: ea40961880f736f4e8b5648bc0fd2204
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8712704728067594675
+    second: skillnguatre_0
+  - first:
+      213: 5516815985406453296
+    second: skillnguatre_1
+  - first:
+      213: -9073822373181586696
+    second: skillnguatre_2
+  - first:
+      213: -2570349211458147433
+    second: skillnguatre_3
+  - first:
+      213: -6357061413595309559
+    second: skillnguatre_4
+  - first:
+      213: 2536366893018243860
+    second: skillnguatre_5
+  - first:
+      213: 3235363906968978168
+    second: skillnguatre_6
+  - first:
+      213: -1574291674613960470
+    second: skillnguatre_7
+  - first:
+      213: -311118354855454882
+    second: skillnguatre_8
+  - first:
+      213: 6288003433033286339
+    second: skillnguatre_9
+  - first:
+      213: 2791406716998463205
+    second: skillnguatre_10
+  - first:
+      213: 4305870818878925965
+    second: skillnguatre_11
+  - first:
+      213: 7956531484509463339
+    second: skillnguatre_12
+  - first:
+      213: -674968637448703070
+    second: skillnguatre_13
+  - first:
+      213: -8268660485293344626
+    second: skillnguatre_14
+  - first:
+      213: -4538254026699342406
+    second: skillnguatre_15
+  - first:
+      213: 1260283765588137535
+    second: skillnguatre_16
+  - first:
+      213: 3454527834614324510
+    second: skillnguatre_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skillnguatre_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 225
+        width: 128
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79be45ea209445cd0800000000000000
+      internalID: -2570349211458147433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 235
+        width: 122
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a1f43535e27c7a0800000000000000
+      internalID: -6357061413595309559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 251
+        width: 127
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413e96e304cf23320800000000000000
+      internalID: 2536366893018243860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 211
+        width: 114
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2810ae45256ec20800000000000000
+      internalID: 3235363906968978168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_7
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 211
+        width: 45
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0b7c9101ef62ae0800000000000000
+      internalID: -1574291674613960470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_8
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 211
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e579cbf218faeabf0800000000000000
+      internalID: -311118354855454882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_9
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 211
+        width: 123
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2c26c9ec9734750800000000000000
+      internalID: 6288003433033286339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_14
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 27
+        width: 179
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88f7cd0911df3d80800000000000000
+      internalID: -8268660485293344626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_16
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 29
+        width: 129
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f369214586d6d7110800000000000000
+      internalID: 1260283765588137535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skillnguatre_17
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 29
+        width: 173
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dd2e043c2f0ff20800000000000000
+      internalID: 3454527834614324510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7bdb97c256ddc1143a7cbfcde2105315
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      skillnguatre_0: -8712704728067594675
+      skillnguatre_1: 5516815985406453296
+      skillnguatre_10: 2791406716998463205
+      skillnguatre_11: 4305870818878925965
+      skillnguatre_12: 7956531484509463339
+      skillnguatre_13: -674968637448703070
+      skillnguatre_14: -8268660485293344626
+      skillnguatre_15: -4538254026699342406
+      skillnguatre_16: 1260283765588137535
+      skillnguatre_17: 3454527834614324510
+      skillnguatre_2: -9073822373181586696
+      skillnguatre_3: -2570349211458147433
+      skillnguatre_4: -6357061413595309559
+      skillnguatre_5: 2536366893018243860
+      skillnguatre_6: 3235363906968978168
+      skillnguatre_7: -1574291674613960470
+      skillnguatre_8: -311118354855454882
+      skillnguatre_9: 6288003433033286339
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

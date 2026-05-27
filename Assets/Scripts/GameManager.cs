@@ -28,7 +28,14 @@ public class GameManager : MonoBehaviour
 
     [Header("=== SQUARE CHẶN ĐƯỜNG ===")]
     public List<GameObject> blockingSquares = new List<GameObject>();
-    private bool daMoKhoa = false;
+    private bool daMoKhoa = false;  // Giữ private
+
+    // Thêm property public
+    public bool DaMoKhoa
+    {
+        get { return daMoKhoa; }
+        set { daMoKhoa = value; }
+    }
 
     [Header("=== UI GIAO DIỆN ===")]
     public Text textNhiemVu;
@@ -38,46 +45,64 @@ public class GameManager : MonoBehaviour
     public Color mauSquareKhiKhoa = new Color(0.8f, 0.2f, 0.2f, 1f);
     public Color mauSquareKhiMo = new Color(0.2f, 0.8f, 0.2f, 0.5f);
 
-    // LƯU TRỮ DỮ LIỆU KHI CHUYỂN MAP
+    // Dữ liệu lưu trữ xuyên scene
     private static int luuSoComDaThu = 0;
     private static int luuSoQuaiDaDiet = 0;
     private static bool luuDaMoKhoa = false;
     public bool daQuaMapTruoc = false;
 
+    // Flag để tránh biến hình nhiều lần
+    private bool daBienHinhTuBaby = false;
+
     void Awake()
     {
-        /*if (Instance == null)
+        // ✅ Singleton Pattern CHUẨN
+        if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
-            SceneManager.sceneLoaded += OnSceneLoaded;
+            DontDestroyOnLoad(gameObject);  // Giữ object khi chuyển scene
+            SceneManager.sceneLoaded += OnSceneLoaded;  // Đăng ký sự kiện load scene
+            Debug.Log("🎮 GameManager khởi tạo (Singleton)");
         }
         else
         {
+            Debug.Log("🗑️ Destroy GameManager dư thừa");
             Destroy(gameObject);
-        }*/
-        Instance = this;
+        }
+    }
+
+    void OnDestroy()
+    {
+        // Hủy đăng ký sự kiện khi object bị destroy
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log($"📱 Load scene: {scene.name}");
+        Debug.Log($"📊 Trước khi khôi phục: soComDaThu={soComDaThu}, luuSoComDaThu={luuSoComDaThu}");
 
         // Khôi phục dữ liệu từ biến tĩnh
         soComDaThu = luuSoComDaThu;
         soQuaiDaDiet = luuSoQuaiDaDiet;
         daMoKhoa = luuDaMoKhoa;
 
-        Debug.Log($"📊 Khôi phục: Com={soComDaThu}/{soComCanThu}, Quai={soQuaiDaDiet}/{soQuaiCanDiet}, MoKhoa={daMoKhoa}");
+        Debug.Log($"📊 Sau khi khôi phục: Com={soComDaThu}/{soComCanThu}, Quai={soQuaiDaDiet}/{soQuaiCanDiet}, MoKhoa={daMoKhoa}");
 
-        // Reset danh sách square (sẽ tìm lại trong scene mới)
         blockingSquares.Clear();
-
         KhoiTaoManChoiHienTai(scene.name);
     }
 
     void KhoiTaoManChoiHienTai(string currentSceneName)
     {
+        // Tìm UI trong scene mới
+        if (gameOverPanel == null)
+            gameOverPanel = GameObject.Find("GameOverPanel");
+        if (textNhiemVu == null)
+            textNhiemVu = GameObject.Find("TextNhiemVu")?.GetComponent<Text>();
+        if (thongBaoMoKhoa == null)
+            thongBaoMoKhoa = GameObject.Find("ThongBaoMoKhoa");
+
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
 
@@ -94,18 +119,17 @@ public class GameManager : MonoBehaviour
         }
 
         // 2. Tìm player
-        playerControl = FindFirstObjectByType<PlayerControl>();
+        if (PlayerControl.Instance != null)
+        {
+            playerControl = PlayerControl.Instance;
+        }
+        else
+        {
+            playerControl = FindFirstObjectByType<PlayerControl>();
+        }
         playerHealth = FindFirstObjectByType<HealthManager>();
 
-        // 3. Tìm UI
-        if (textNhiemVu == null)
-            textNhiemVu = GameObject.Find("TextNhiemVu")?.GetComponent<Text>();
-        if (thongBaoMoKhoa == null)
-            thongBaoMoKhoa = GameObject.Find("ThongBaoMoKhoa");
-        if (gameOverPanel == null)
-            gameOverPanel = GameObject.Find("GameOverPanel");
-
-        // 4. Khởi tạo square
+        // 3. Khởi tạo square (BẮT BUỘC phải gọi TRƯỚC khi mở khóa)
         KhoiTaoTatCaSquare();
 
         if (thongBaoMoKhoa != null)
@@ -113,10 +137,11 @@ public class GameManager : MonoBehaviour
 
         CapNhatUI();
 
-        // Nếu đã mở khóa từ trước, mở luôn square trong scene mới
+        // 4. Nếu đã mở khóa từ trước, mở luôn square trong scene mới
         if (daMoKhoa)
         {
-            MoKhoaTatCaSquare();
+            Debug.Log($"🔓 Đã mở khóa từ trước, đang mở {blockingSquares.Count} square...");
+            MoKhoaTatCaSquare();  // Gọi lại để tắt square
         }
     }
 
@@ -147,26 +172,44 @@ public class GameManager : MonoBehaviour
     {
         if (!suDungNhiemVuCom || daMoKhoa) return;
 
+        // Đảm bảo playerControl không bị null
+        if (playerControl == null && PlayerControl.Instance != null)
+        {
+            playerControl = PlayerControl.Instance;
+        }
+
+        if (playerControl == null)
+        {
+            Debug.LogError("❌ Không tìm thấy PlayerControl!");
+            return;
+        }
+
         soComDaThu++;
         Debug.Log($"🍙 Thu thập com: {soComDaThu}/{soComCanThu}");
 
-        // LƯU VÀO BIẾN TĨNH
         luuSoComDaThu = soComDaThu;
-
         CapNhatUI();
 
         // Biến hình khi đủ 10 com
-        if (soComDaThu >= 10)
+        if (soComDaThu >= 10 && !daBienHinhTuBaby)
         {
-            if (playerControl != null && playerControl.currentForm == PlayerControl.PlayerForm.Baby)
+            if (playerControl.currentForm == PlayerControl.PlayerForm.Baby)
             {
+                daBienHinhTuBaby = true;
                 playerControl.ChangeForm(PlayerControl.PlayerForm.Adult);
+                Debug.Log("🦄 Đã biến hình Baby → Adult!");
             }
         }
 
+        // ✅ MỞ KHÓA CỬA khi đủ com
         if (soComDaThu >= soComCanThu)
         {
+            Debug.Log($"🔑 Đủ {soComCanThu} com, chuẩn bị mở cửa!");
             MoKhoaTatCaSquare();
+        }
+        else
+        {
+            Debug.Log($"🚪 Cần thêm {soComCanThu - soComDaThu} com nữa để mở cửa");
         }
     }
 
@@ -190,19 +233,33 @@ public class GameManager : MonoBehaviour
 
     private void MoKhoaTatCaSquare()
     {
-        if (daMoKhoa) return;
+        if (daMoKhoa && blockingSquares.Count > 0)
+        {
+            Debug.Log("⚠️ Cửa đã mở, bỏ qua!");
+            return;
+        }
 
         daMoKhoa = true;
-        luuDaMoKhoa = true; // LƯU TRẠNG THÁI ĐÃ MỞ KHÓA
+        luuDaMoKhoa = true;
 
-        Debug.Log("🎉 MỞ KHÓA TẤT CẢ SQUARE!");
+        Debug.Log($"🎉 MỞ KHÓA TẤT CẢ {blockingSquares.Count} SQUARE!");
 
         for (int i = 0; i < blockingSquares.Count; i++)
         {
             if (blockingSquares[i] != null)
             {
-                blockingSquares[i].SetActive(false);
-                Debug.Log($"  ✓ Đã tắt {blockingSquares[i].name}");
+                // ✅ Gọi hàm MoKhoa() trên SquareBlocker nếu có
+                SquareBlocker blocker = blockingSquares[i].GetComponent<SquareBlocker>();
+                if (blocker != null)
+                {
+                    blocker.MoKhoa();
+                }
+                else
+                {
+                    // Fallback: tắt trực tiếp
+                    blockingSquares[i].SetActive(false);
+                }
+                Debug.Log($"  ✓ Đã xử lý {blockingSquares[i].name}");
             }
         }
 
@@ -234,7 +291,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        if (gameOverPanel.activeSelf) return;
+        if (gameOverPanel == null || gameOverPanel.activeSelf) return;
 
         Time.timeScale = 0f;
         gameOverPanel.SetActive(true);
@@ -245,12 +302,17 @@ public class GameManager : MonoBehaviour
     public void RetryGame()
     {
         Time.timeScale = 1f;
+
+        // Reset dữ liệu
         soComDaThu = 0;
         soQuaiDaDiet = 0;
         luuSoComDaThu = 0;
         luuSoQuaiDaDiet = 0;
         luuDaMoKhoa = false;
         daMoKhoa = false;
+        daBienHinhTuBaby = false;
+        daQuaMapTruoc = false;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -266,6 +328,7 @@ public class GameManager : MonoBehaviour
         luuDaMoKhoa = false;
         daMoKhoa = false;
         daQuaMapTruoc = false;
+        daBienHinhTuBaby = false;
 
         Destroy(gameObject);
         SceneManager.LoadScene("MenuScene");
@@ -273,15 +336,18 @@ public class GameManager : MonoBehaviour
 
     public void ChuyenMap(string tenMapMoi)
     {
-        daQuaMapTruoc = true; // Đánh dấu đã qua map
+        daQuaMapTruoc = true;
         SceneManager.LoadScene(tenMapMoi);
     }
 
     public void PlayerDied()
     {
-        if (!gameOverPanel.activeSelf)
+        if (gameOverPanel == null || !gameOverPanel.activeSelf)
         {
             GameOver();
         }
     }
+
+    // Property để lấy số com hiện tại (cho UI)
+    public int LaySoComHienTai() => soComDaThu;
 }

@@ -27,7 +27,7 @@ public class CutsceneManager : MonoBehaviour
     private bool isPlaying = false;
     private bool isQuitting = false;
     private bool skipRequested = false;
-    private string currentCutsceneType = ""; // "intro" hoặc "ending"
+    //private string currentCutsceneType = ""; // "intro" hoặc "ending"
 
     void Awake()
     {
@@ -93,7 +93,7 @@ public class CutsceneManager : MonoBehaviour
 
         if (introVideo != null)
         {
-            currentCutsceneType = "intro";
+        
             PlayCutscene(introVideo, () => {
                 Debug.Log("🎬 Intro kết thúc! Chuyển sang " + introNextScene);
                 SceneManager.LoadScene(introNextScene);
@@ -112,7 +112,7 @@ public class CutsceneManager : MonoBehaviour
 
         if (endingVideo != null)
         {
-            currentCutsceneType = "ending";
+       
             PlayCutscene(endingVideo, () => {
                 Debug.Log("🎬 Ending kết thúc! Chuyển sang " + endingNextScene);
 

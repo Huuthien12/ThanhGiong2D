@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animations/giacAndichuyen.anim.meta
 guid: c5e95d0f2081176489e380a822b2797c
+========
+guid: bcc247f59176a684aabe0bb3eddedca8
+>>>>>>>> ec7febc7911db5d28d7762ab3bfab97a04b38f6d:Assets/Animations/nguagiao_attack.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000
