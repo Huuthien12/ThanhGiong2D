@@ -1,0 +1,445 @@
+fileFormatVersion: 2
+guid: 48e0283d8330ce849a1aef800b53be6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 620422246870011355
+    second: nguacamgiao_idel_run_0
+  - first:
+      213: -5328152568476483480
+    second: nguacamgiao_idel_run_1
+  - first:
+      213: 8074886809173496685
+    second: nguacamgiao_idel_run_2
+  - first:
+      213: 343296015232971782
+    second: nguacamgiao_idel_run_3
+  - first:
+      213: 2704529754839185363
+    second: nguacamgiao_idel_run_4
+  - first:
+      213: -4913289294801221605
+    second: nguacamgiao_idel_run_5
+  - first:
+      213: 4589228565960029986
+    second: nguacamgiao_idel_run_6
+  - first:
+      213: -5513638841935566709
+    second: nguacamgiao_idel_run_7
+  - first:
+      213: 5502237055144360590
+    second: nguacamgiao_idel_run_8
+  - first:
+      213: 5275647208104434853
+    second: nguacamgiao_idel_run_9
+  - first:
+      213: -6704215837785113572
+    second: nguacamgiao_idel_run_10
+  - first:
+      213: -3608431712428268715
+    second: nguacamgiao_idel_run_11
+  - first:
+      213: 8846033812816820419
+    second: nguacamgiao_idel_run_12
+  - first:
+      213: -5409019588613665305
+    second: nguacamgiao_idel_run_13
+  - first:
+      213: 2565731505925579404
+    second: nguacamgiao_idel_run_14
+  - first:
+      213: -327347652650435041
+    second: nguacamgiao_idel_run_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 209
+        width: 108
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860cfdef7799e06b0800000000000000
+      internalID: -5328152568476483480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 209
+        width: 102
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63164635c2cf0070800000000000000
+      internalID: 8074886809173496685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 209
+        width: 102
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604b4c038e1a3c400800000000000000
+      internalID: 343296015232971782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_4
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 209
+        width: 104
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7f9a99b7b688520800000000000000
+      internalID: 2704529754839185363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_5
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 209
+        width: 103
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18c4a80b6d70dbb0800000000000000
+      internalID: -4913289294801221605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 28
+        width: 44
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac98572f2dd63940800000000000000
+      internalID: 5275647208104434853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 35
+        width: 130
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c354b4737d5f2a0800000000000000
+      internalID: -6704215837785113572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 28
+        width: 130
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5536570d9764cedc0800000000000000
+      internalID: -3608431712428268715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 28
+        width: 47
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c87a0c62ec63ca70800000000000000
+      internalID: 8846033812816820419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_13
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 33
+        width: 126
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed8d85a75d4fe4b0800000000000000
+      internalID: -5409019588613665305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_14
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 28
+        width: 133
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82e8b7f53f4b9320800000000000000
+      internalID: 2565731505925579404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguacamgiao_idel_run_15
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 28
+        width: 128
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e76b55b07057bf0800000000000000
+      internalID: -327347652650435041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e698139351cd6ef428feb7bb35bd270d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nguacamgiao_idel_run_0: 620422246870011355
+      nguacamgiao_idel_run_1: -5328152568476483480
+      nguacamgiao_idel_run_10: -6704215837785113572
+      nguacamgiao_idel_run_11: -3608431712428268715
+      nguacamgiao_idel_run_12: 8846033812816820419
+      nguacamgiao_idel_run_13: -5409019588613665305
+      nguacamgiao_idel_run_14: 2565731505925579404
+      nguacamgiao_idel_run_15: -327347652650435041
+      nguacamgiao_idel_run_2: 8074886809173496685
+      nguacamgiao_idel_run_3: 343296015232971782
+      nguacamgiao_idel_run_4: 2704529754839185363
+      nguacamgiao_idel_run_5: -4913289294801221605
+      nguacamgiao_idel_run_6: 4589228565960029986
+      nguacamgiao_idel_run_7: -5513638841935566709
+      nguacamgiao_idel_run_8: 5502237055144360590
+      nguacamgiao_idel_run_9: 5275647208104434853
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

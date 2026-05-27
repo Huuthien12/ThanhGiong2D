@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: f48f908cc233e3348bca4ab48460b2b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4644663981831612750
+    second: nguatre_jump_attack_0
+  - first:
+      213: -3573574906245464430
+    second: nguatre_jump_attack_1
+  - first:
+      213: -2368766456072047656
+    second: nguatre_jump_attack_2
+  - first:
+      213: -7627377329784278196
+    second: nguatre_jump_attack_3
+  - first:
+      213: -4256672931479496091
+    second: nguatre_jump_attack_4
+  - first:
+      213: 129725714307727691
+    second: nguatre_jump_attack_5
+  - first:
+      213: -5542974742021257937
+    second: nguatre_jump_attack_6
+  - first:
+      213: 5515662040278540862
+    second: nguatre_jump_attack_7
+  - first:
+      213: 6481190450523042388
+    second: nguatre_jump_attack_8
+  - first:
+      213: 1944857378063231761
+    second: nguatre_jump_attack_9
+  - first:
+      213: -2407313110476935495
+    second: nguatre_jump_attack_10
+  - first:
+      213: -8453558070661402022
+    second: nguatre_jump_attack_11
+  - first:
+      213: 5930967806367565420
+    second: nguatre_jump_attack_12
+  - first:
+      213: 3426783476466236783
+    second: nguatre_jump_attack_13
+  - first:
+      213: 6062356258321256310
+    second: nguatre_jump_attack_14
+  - first:
+      213: -6759497640094634550
+    second: nguatre_jump_attack_15
+  - first:
+      213: 7054198271022975852
+    second: nguatre_jump_attack_16
+  - first:
+      213: 3364648071896061414
+    second: nguatre_jump_attack_17
+  - first:
+      213: 3704256663751239540
+    second: nguatre_jump_attack_18
+  - first:
+      213: -4543078684334781657
+    second: nguatre_jump_attack_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nguatre_jump_attack_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 340
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49ef127849257040800000000000000
+      internalID: 4644663981831612750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 340
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e3dfe6e8c186ec0800000000000000
+      internalID: -3573574906245464430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 340
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3f6fd5573702fd0800000000000000
+      internalID: -2368766456072047656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 340
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43375aeabc162690800000000000000
+      internalID: -7627377329784278196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_4
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 226
+        width: 128
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ad42a85824de4c0800000000000000
+      internalID: -4256672931479496091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_5
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 235
+        width: 121
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41cb8f89d0ecc100800000000000000
+      internalID: 129725714307727691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_6
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 250
+        width: 126
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f254cde07d56313b0800000000000000
+      internalID: -5542974742021257937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 211
+        width: 115
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32a8e307619b8c40800000000000000
+      internalID: 5515662040278540862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 227
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452741d3060d1f950800000000000000
+      internalID: 6481190450523042388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_9
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 211
+        width: 47
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ba1462b758dfa10800000000000000
+      internalID: 1944857378063231761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_10
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 224
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bea1e20b71879ed0800000000000000
+      internalID: -2407313110476935495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_11
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 210
+        width: 103
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52371e39bdeeaa80800000000000000
+      internalID: -8453558070661402022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_12
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 218
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6601d8dbc70f4250800000000000000
+      internalID: 5930967806367565420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 153
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6db2fc7a616e8f20800000000000000
+      internalID: 3426783476466236783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_14
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 151
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fca1fa5e0d12450800000000000000
+      internalID: 6062356258321256310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 153
+        width: 41
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd611ea5b07132a0800000000000000
+      internalID: -6759497640094634550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 27
+        width: 134
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bcf77e3fb85e160800000000000000
+      internalID: 7054198271022975852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_17
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 27
+        width: 196
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5519f3891a1be20800000000000000
+      internalID: 3364648071896061414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_18
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 86
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47724c74fc9286330800000000000000
+      internalID: 3704256663751239540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nguatre_jump_attack_19
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 27
+        width: 184
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b8391c10eb3f0c0800000000000000
+      internalID: -4543078684334781657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      nguatre_jump_attack_0: 4644663981831612750
+      nguatre_jump_attack_1: -3573574906245464430
+      nguatre_jump_attack_10: -2407313110476935495
+      nguatre_jump_attack_11: -8453558070661402022
+      nguatre_jump_attack_12: 5930967806367565420
+      nguatre_jump_attack_13: 3426783476466236783
+      nguatre_jump_attack_14: 6062356258321256310
+      nguatre_jump_attack_15: -6759497640094634550
+      nguatre_jump_attack_16: 7054198271022975852
+      nguatre_jump_attack_17: 3364648071896061414
+      nguatre_jump_attack_18: 3704256663751239540
+      nguatre_jump_attack_19: -4543078684334781657
+      nguatre_jump_attack_2: -2368766456072047656
+      nguatre_jump_attack_3: -7627377329784278196
+      nguatre_jump_attack_4: -4256672931479496091
+      nguatre_jump_attack_5: 129725714307727691
+      nguatre_jump_attack_6: -5542974742021257937
+      nguatre_jump_attack_7: 5515662040278540862
+      nguatre_jump_attack_8: 6481190450523042388
+      nguatre_jump_attack_9: 1944857378063231761
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
